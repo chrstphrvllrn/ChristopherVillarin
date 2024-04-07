@@ -13,7 +13,7 @@ function App() {
 
       <NavBar />
       <Hero />
-      {/* <Grey /> */}
+      <Grey />
       <Statistics />
       <Black />
       {/**test **/}

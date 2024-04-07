@@ -2,7 +2,7 @@ import React from 'react'
 
 const Grey = () => {
     return (
-        <div className='w-full h-[30vh] bg-[#fff]'>
+        <div className='w-full h-[20vh] bg-[#fff]'>
             {/* f3f3f3 */}
 
             {/* < div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 " >

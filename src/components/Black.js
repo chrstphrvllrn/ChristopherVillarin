@@ -5,7 +5,7 @@ const Black = () => {
         <div className='w-full bg-[#fac541]'>
             {/* fac541 */}
 
-            < div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 " >
+            < div className="flex justify-between items-center  mx-auto px-4  sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1536px]" >
 
                 <div className="w-full md:w-6/12 py-24 px-16   ">
                     <div className="w-full aspect-video ">
