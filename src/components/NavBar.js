@@ -6,7 +6,7 @@ import React from 'react'
 const NavBar = () => {
     return (
         <div className='w-full  text-[#000000] font-light py-7 sm:py-7  md:py-7 lg:py-8 xl:py-8 '>
-            <div className="h-16  mx-auto md:px-14 lg:px-17 flex"> {/** max-w-[1240px]*/}
+            <div className="h-16  mx-auto md:px-14 lg:px-27 flex"> {/** max-w-[1240px]*/}
                 {/* <div className="p-8 w-full bg-slate-300"> </div> */}
                 <div className='w-full flex flex-row justify-between items-center'>
                     <div className='flex text-1xl md:text-2xl lg:text-3xl font-bold mr-5 text-[#fac541]'>VILL<span className=' text-black '>ARIN</span></div>
