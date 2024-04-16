@@ -2,6 +2,8 @@
 
 
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const NavBar = () => {
     return (
@@ -13,15 +15,17 @@ const NavBar = () => {
                     <ul className='flex bg-[#f3f3f3] rounded-full font-medium 
                     text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md 
                     hidden sm:flex md:flex lg:flex xl:flex'>
-                        <li className='p-4 mx-5'>HOME</li>
-                        <li className='p-4 mx-5'>ABOUT</li>
-                        <li className='p-4 mx-5'>CONTACT</li>
+                        <Link to="/"> <li className='p-4 mx-5 hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>HOME</li></Link>
+                        <p className='p-4 font-light text-gray-400'>|</p>
+                        <Link to="/portfolio"> <li className='p-4 mx-5 hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>PORTFOLIO</li></Link>
+                        <p className='p-4 font-light text-gray-400'>|</p>
+                        <Link to="/history"><li className='p-4 mx-5 hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>HISTORY</li></Link>
+                        <p className='p-4 font-light text-gray-400'>|</p>
+                        <Link to="/skills"> <li className='p-4 mx-5 hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>SKILLS</li></Link>
                         {/* <button className='bg-[#000000] text-[#FFF] w-[100px] h-5/6 rounded-full font-regular'>Learn More</button> */}
                     </ul>
-                    <ul className='flex bg-[#f3f3f3] rounded-full font-medium text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md'>
-                        <li className='p-4 mx-5'>CART</li>
-
-
+                    <ul className='flex bg-[#f3f3f3] rounded-full font-medium text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>
+                        <li className='p-4 mx-5 '>CONTACT</li>
                     </ul>
                 </div>
 
@@ -29,9 +33,12 @@ const NavBar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg> */}
 
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
 export default NavBar
+
+
+
