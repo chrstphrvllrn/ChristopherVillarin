@@ -3,12 +3,12 @@ import NavBar from './NavBar.js'
 import IconPlay from './icons/play.js'
 import supermario from '../supermario-thumb.png';
 import banner2 from '../banner_2.png';
-import banner3 from '../banner_3.png';
-import banner4 from '../banner_4.png';
-import banner5 from '../banner_5.png';
-import banner6 from '../banner_6.png';
-import banner7 from '../banner_7.png';
-import banner8 from '../banner_8.png';
+import banner3 from '../banner_2.png';
+import banner4 from '../banner_2.png';
+import banner5 from '../banner_2.png';
+import banner6 from '../banner_2.png';
+import banner7 from '../banner_2.png';
+import banner8 from '../banner_2.png';
 
 import blank from '../blank.png';
 // import banner2 from '../300x250_2.jpg';

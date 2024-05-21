@@ -14,7 +14,6 @@ const History = () => {
 
             <div className="w-full flex flex-col md:flex-row text-[#030303] font-light mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] ">
 
-
                 <div className="w-1/2  min-h-[30vh] flex flex-col md:flex-col text-[#030303] font-light mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] p-5 m-5 gap-5 ">
                     <p className='text-md font-bold'>Where I've been..</p>
                     <div className="w-full flex flex-row text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] bg-gray-0  p-5 m-5 gap-5 text-white">
