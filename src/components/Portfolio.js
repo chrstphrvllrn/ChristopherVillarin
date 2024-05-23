@@ -5,11 +5,14 @@ import supermario from '../supermario-thumb.png';
 import banner1 from '../banner_1.png';
 import banner2 from '../banner_2.png';
 import banner3 from '../banner_3.png';
-import banner4 from '../banner_4.png';
+import banner4 from '../banner_6.png';
 import banner5 from '../banner_5.png';
-import banner6 from '../banner_6.png';
-import banner7 from '../banner_7.png';
+import banner6 from '../banner_11.png';
+import banner7 from '../banner_8.png';
 import banner8 from '../banner_2.png';
+import banner9 from '../banner_9.png';
+import banner10 from '../banner_10.png';
+
 
 import blank from '../blank.png';
 // import banner2 from '../300x250_2.jpg';
@@ -90,7 +93,7 @@ const Portfolio = () => {
                         </div>
                         <div className="w-1/4 h-auto flex flex-col  justify-center items-center gap-5 m-4 shadow-sm border rounded-md">
                             <div className="w-[260px] h-[217px] flex justify-center items-center cursor-pointer relative mt-3">
-                                <img src={banner2} />
+                                <img src={banner9} />
                                 <div className="bg-[rgba(0,0,0,0.05)] hover:bg-[rgba(0,0,0,0.2)]    w-full h-full absolute" ></div>
                                 <IconPlay></IconPlay>
                             </div>
@@ -98,7 +101,7 @@ const Portfolio = () => {
                         </div>
                         <div className="w-1/4 h-auto flex flex-col  justify-center items-center gap-5 m-4 shadow-sm border rounded-md">
                             <div className="w-[260px] h-[217px] flex justify-center items-center cursor-pointer relative mt-3">
-                                <img src={banner2} />
+                                <img src={banner10} />
                                 <div className="bg-[rgba(0,0,0,0.05)] hover:bg-[rgba(0,0,0,0.2)]    w-full h-full absolute" ></div>
                                 <IconPlay></IconPlay>
                             </div>
