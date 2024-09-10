@@ -4,7 +4,7 @@ import * as React from "react";
 function IconGmail(props) {
   return (
     <svg
-    className="fill-current text-black hover:text-[#fac541] transition-colors duration-100 cursor-pointer"
+    className="fill-current text-[#FC4107] hover:text-[#FC4107] transition-colors duration-100 cursor-pointer"
       viewBox="0 0 24 24"
       fill="currentColor"
       height="2em"

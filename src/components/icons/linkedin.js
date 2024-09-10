@@ -6,7 +6,7 @@ function IconLinkedin(props) {
   return (
     <>
       <svg
-        className="fill-current text-black hover:text-[#fac541] transition-colors duration-300 cursor-pointer"
+        className="fill-current text-[#355FC0] hover:text-[#FC4107] transition-colors duration-300 cursor-pointer"
         viewBox="0 0 1024 1024"
         fill="currentColor"
         height="2em"
