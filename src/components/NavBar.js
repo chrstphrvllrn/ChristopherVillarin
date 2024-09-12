@@ -8,8 +8,8 @@ import IconGmail from './icons/gmail'
 
 const NavBar = () => {
     return (
-        <div className='w-full  text-[#1B224A] font-light py-7 sm:py-7  md:py-7 lg:py-8 xl:py-8 '>
-            <div className="h-10  mx-auto md:px-14 lg:px-27 flex"> {/** max-w-[1240px]*/}
+        <div className='w-full text-[#1B224A] font-light py-7 sm:py-7  md:py-7 lg:py-8 xl:py-8 px-8 sm:px-8 md:px-4'>
+            <div className="h-10 mx-auto md:px-14 lg:px-27 flex"> {/** max-w-[1240px]*/}
                 {/* <div className="p-8 w-full bg-slate-300"> </div> */}
                 <div className='w-full flex flex-row justify-center items-center'>
                     {/* <div className='flex text-1xl md:text-2xl lg:text-3xl font-bold mr-5 text-[#1B224A]'>VILL<span className='text-[#1B224A]'>ARIN</span></div> */}
