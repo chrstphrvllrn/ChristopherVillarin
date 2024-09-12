@@ -8,7 +8,7 @@ import IconGmail from './icons/gmail'
 
 const NavBar = () => {
     return (
-        <div className='w-full text-[#1B224A] font-light py-7 sm:py-7  md:py-7 lg:py-8 xl:py-8 px-8 sm:px-8 md:px-4'>
+        <div className='w-full text-[#1B224A] font-light py-3 sm:py-3  md:py-5 lg:py-6 xl:py-6 px-8 sm:px-8 md:px-4'>
             <div className="h-10 mx-auto md:px-14 lg:px-27 flex"> {/** max-w-[1240px]*/}
                 {/* <div className="p-8 w-full bg-slate-300"> </div> */}
                 <div className='w-full flex flex-row justify-center items-center'>
@@ -25,16 +25,16 @@ const NavBar = () => {
                             bg-[#fff]
                             hover:bg-[#D5D5D8]' 
                             style={{ transition: 'background-color 0.3s' }}> 
-                                <li className='p-3 mx-5  cursor-pointer hover:scale-105 transition-all duration-500' >HOME</li>
+                                <li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-500' >HOME</li>
                             </Link>
                             {/*bg-[#f3f3f3] hover:bg-[#fac541]*/}
                             {/* bg-[#f3f3f3] hover:bg-[#f3f3f3]  */}
                             <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/portfolio" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 cursor-pointer hover:scale-105 transition-all duration-500' >PORTFOLIO</li></Link>
+                            <Link to="/portfolio" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-500' >PORTFOLIO</li></Link>
                             <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/history" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}><li className='p-3 mx-5 cursor-pointer hover:scale-105 transition-all duration-500' >WHERE I'VE BEEN</li></Link>
+                            <Link to="/history" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}><li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-500' >WHERE I'VE BEEN</li></Link>
                             <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/skills" className='hover:text-[#000] rounded-r-full bg-[#fff] hover:bg-[#D5D5D8]' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 cursor-pointer hover:scale-105 transition-all duration-500'  >SKILLS</li></Link>
+                            <Link to="/skills" className='hover:text-[#000] rounded-r-full bg-[#fff] hover:bg-[#D5D5D8]' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-500'  >SKILLS</li></Link>
                             {/* <button className='bg-[#000000] text-[#FFF] w-[100px] h-5/6 rounded-full font-regular'>Learn More</button> */}
                         </ul>
                         {/* <ul className='flex bg-[#f3f3f3] rounded-full font-medium text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>
@@ -45,10 +45,10 @@ const NavBar = () => {
                        </div>
                        <div className='w-1/4 flex flex-row justify-end '>
                             <div className='flex flex-row items-center     '>
-                                <Link to="https://www.linkedin.com/in/christophervillarin" target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#f3f3f3] rounded-l-full'>
+                                <Link to="https://www.linkedin.com/in/christophervillarin" target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>
                                     <IconLinkedin></IconLinkedin>
                                 </Link>
-                                <button onClick={() => navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')} className='pt-3 pb-3   pl-3 pr-3 bg-[#f3f3f3]  rounded-r-full' >
+                                <button onClick={() => navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')} className='pt-3 pb-3   pl-3 pr-3 bg-[#fff]  rounded-r-full' >
                                     <IconGmail></IconGmail>
                                 </button>
 

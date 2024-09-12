@@ -29,8 +29,8 @@ const Portfolio = () => {
         //  style={{ backgroundImage: `url(${bgImage})` }}
         <div className=''>
             <NavBar />
-            <div className="w-full flex flex-col text-[#030303] font-light  ">
-                <div className="w-full h-auto flex flex-col items-start text-left justify-center mx-auto 
+            <div className="w-full flex flex-col text-[#030303] font-light bg-[#f3f3f3] ">
+                <div className="w-full h-auto min-h-[50vh] flex flex-col items-start text-left justify-center mx-auto 
                 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] 2xl:max-w-[1636px]
                 gap-3">
                 <div className="w-full h-full flex items-center flex-wrap justify-center sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row transition-all duration-2000 ease-in-out transform gap-2" style={{ transition: 'grid 0.5s ease' }}>

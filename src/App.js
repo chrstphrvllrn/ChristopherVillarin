@@ -5,9 +5,9 @@ function App() {
     <div className=''>
       <NavBar />
 
-      <section className='flex flex-col sm:flex-col md:flex-row'>
+      <section className='flex flex-col sm:flex-col md:flex-row bg-gradient-to-br from-stone-50 to-neutral-50'>
             <div className="w-full sm:w-full md:w-1/2 px-8 sm:px-8 md:px-16 flex flex-col md:flex-row" >
-                  <div className="w-full min-h-[50vh] sm:min-h-[50vh]  md:min-h-[70vh]  lg:min-h-[70vh] xl:min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1080px] 2xl:max-w-[1536px]"> {/**/}
+                  <div className="bg-[f3f3f3] w-full min-h-[50vh] sm:min-h-[50vh]  md:min-h-[70vh]  lg:min-h-[70vh] xl:min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1080px] 2xl:max-w-[1536px]"> {/**/}
                   <p className='text-4xl p-8 sm:p-8 md:p-4 lg:p-4 xl:p-4 font-light w-full leading-snug text-[#1B224A] '>Hey there, I'm<br />  <p className='text-5xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-[7rem] 2xl:text-[10rem] font-medium bebas-neue-regular text-[#1B224A] bg-gradient-to-b from-[#7383F7] to-[#508989] bg-clip-text text-transparent '>CHRISTOPHER<br />VILLARIN</p></p>
                   {/* <p className='text-4xl p-4 font-light w-full leading-snug text-[#1B224A] '>Hey there, I'm<br />  <p className='text-6xl md:text-8xl lg:text-9xl xl:text-9xl font-medium bebas-neue-regular text-[#1B224A] bg-gradient-to-b from-[#4164A1] via-[#7A4A8A] to-[#7A4A8A] bg-clip-text text-transparent '>CHRISTOPHER<br />VILLARIN</p></p> */}
                   

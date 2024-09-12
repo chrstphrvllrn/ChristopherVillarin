@@ -1,12 +1,12 @@
 import React from 'react'
 import NavBar from './NavBar.js'
 import { Link } from 'react-router-dom'
-import mongodb from '../images/icons/mongodb.svg';
-import exoressjs from '../images/icons/Expressjs.png';
-import reactjs from '../images/icons/reactjs.svg';
-import nodejs from '../images/icons/nodejs.svg';
-import tailwindcss from '../images/icons/tailwindcss.svg';
-import awss3 from '../images/icons/awss3.svg';
+// import mongodb from '../images/icons/mongodb.svg';
+// import exoressjs from '../images/icons/Expressjs.png';
+// import reactjs from '../images/icons/reactjs.svg';
+// import nodejs from '../images/icons/nodejs.svg';
+// import tailwindcss from '../images/icons/tailwindcss.svg';
+// import awss3 from '../images/icons/awss3.svg';
 
 const Skills = () => {
     return (
