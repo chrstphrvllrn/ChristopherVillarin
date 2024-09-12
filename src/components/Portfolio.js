@@ -1,15 +1,15 @@
 import React from 'react'
 import NavBar from './NavBar.js'
-import IconPlay from './icons/play.js'
-import supermario from '../images/thumbnails/supermario-thumb.png';
+// import IconPlay from './icons/play.js'
+// import supermario from '../images/thumbnails/supermario-thumb.png';
 import banner1 from '../images/thumbnails/banner_1.png';
-import banner2 from '../images/thumbnails/banner_2.png';
+// import banner2 from '../images/thumbnails/banner_2.png';
 import banner3 from '../images/thumbnails/banner_3.png';
 import banner4 from '../images/thumbnails/banner_6.png';
 import banner5 from '../images/thumbnails/banner_5.png';
 import banner6 from '../images/thumbnails/banner_11.png';
 import banner7 from '../images/thumbnails/banner_8.png';
-import banner8 from '../images/thumbnails/banner_2.png';
+// import banner8 from '../images/thumbnails/banner_2.png';
 import banner9 from '../images/thumbnails/banner_9.png';
 import banner10 from '../images/thumbnails/banner_10.png';
 
