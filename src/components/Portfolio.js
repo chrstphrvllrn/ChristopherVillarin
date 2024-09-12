@@ -27,38 +27,43 @@ const Portfolio = () => {
     return (
         // bg-[url('https://fastly.picsum.photos/id/972/1600/900.jpg?grayscale&hmac=W638WD8WqRiozMXbLvTcudGIQ8EFsXe7ljBjSXFSCz0')] bg-center
         //  style={{ backgroundImage: `url(${bgImage})` }}
-        <div>
+        <div className=''>
             <NavBar />
-            <div className="w-full flex flex-col md:flex-row text-[#030303] font-light bg-slate-50  ">
-                <div className="w-full h-auto flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] gap-3">
-                <div className="w-full h-full flex items-center flex-col sm:flex-col md:flex-col lg:flex-row sm:items-center">
-                           <Project thumbnail={banner1} name=" " ></Project>
-                           <Project thumbnail={banner3} name=" " ></Project>
-                           <Project thumbnail={banner4} name=" " ></Project>
-                           <Project thumbnail={banner5} name=" " ></Project>
+            <div className="w-full flex flex-col text-[#030303] font-light  ">
+                <div className="w-full h-auto flex flex-col items-start text-left justify-center mx-auto 
+                sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] 2xl:max-w-[1636px]
+                gap-3">
+                <div className="w-full h-full flex items-center flex-wrap justify-center sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row transition-all duration-2000 ease-in-out transform gap-2" style={{ transition: 'grid 0.5s ease' }}>
+                           <Project thumbnail={banner1} name="Banner • 2024 "  ></Project>
+                           <Project thumbnail={banner3} name="Banner • 2024" ></Project>
+                           <Project thumbnail={banner9} name="Banner • 2024" ></Project>
+                           <Project thumbnail={banner5} name="Banner • 2024" ></Project>
+
+                           <Project thumbnail={banner6} name="Banner • 2024" ></Project>
+                           <Project thumbnail={banner7} name="Banner • 2024" ></Project>
+                           <Project thumbnail={banner4} name="Banner • 2024" ></Project>
+                           <Project thumbnail={banner10} name="Banner • 2024" ></Project>
+                           {/* <Project thumbnail={banner2} name="banner" ></Project>
+                           <Project thumbnail={banner2} name="banner" ></Project>
+                           <Project thumbnail={banner2} name="banner" ></Project>
+                           <Project thumbnail={banner2} name="banner" ></Project> */}
                     </div>
                 </div>
             </div>
-            <div className="w-full flex flex-col md:flex-row text-[#030303] font-light bg-slate-50  ">
+            {/* <div className="w-full flex flex-col md:flex-row text-[#030303] font-light bg-slate-50  ">
                 <div className="w-full h-auto flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] gap-3">
                     <div className="w-full h-full flex items-center flex-col sm:flex-col md:flex-col lg:flex-row sm:items-center ">
-                           <Project thumbnail={banner6} name=" " ></Project>
-                           <Project thumbnail={banner7} name=" " ></Project>
-                           <Project thumbnail={banner9} name=" " ></Project>
-                           <Project thumbnail={banner10} name=" " ></Project>
+                        
                     </div>
                 </div>
             </div>
             <div className="w-full flex flex-col md:flex-row text-[#030303] font-light  bg-slate-50 ">
                 <div className="w-full h-auto flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] gap-3">
                 <div className="w-full h-full flex items-center flex-col sm:flex-col md:flex-col lg:flex-row sm:items-center ">
-                           <Project thumbnail={banner2} name=" " ></Project>
-                           <Project thumbnail={banner2} name=" " ></Project>
-                           <Project thumbnail={banner2} name=" " ></Project>
-                           <Project thumbnail={banner2} name=" " ></Project>
+                        
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

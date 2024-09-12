@@ -9,7 +9,7 @@ import awss3 from '../images/icons/awss3.svg';
 
 const Skills = () => {
     return (
-        <div >
+        <div className=''>
             <NavBar />
             <div className="w-full flex flex-col md:flex-row text-[#030303] bg-slate-50">
                 <div className="w-full min-h-[40vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]  m-5 gap-5">

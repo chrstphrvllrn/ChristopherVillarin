@@ -5,13 +5,17 @@ import IconPlay from './play.js'
 
 function Project({thumbnail, name}) {
   return (<>
-    <div className="w-1/4 h-auto flex flex-col justify-center items-center gap-5 m-4"  style={{ transition: 'width 0.5s ease' }}>
-        <div className="pr-4 pl-4 flex justify-center items-center cursor-pointer relative pt-4">
-            <img src={thumbnail} className='border border-[#e2e8f0] shadow-md bg-[rgba(0,0,0,0)] hover:bg-[rgba(0,0,0,0.1)]' style={{ transition: 'width 0.5s ease' }} />
-            {/* <div className="bg-[rgba(0,0,0,0)] hover:bg-[rgba(0,0,0,0.1)] w-1/4 h-full absolute" ></div> */}
+  {/* border border-[#f3f3f3] shadow-sm bg-[#f3f3f3] */}
+    <div className="w-72 h-auto flex flex-col justify-center items-left "  style={{ transition: 'width 0.5s ease' }}>
+        <div className="flex justify-center items-center cursor-pointer relative m-4">
+            <img src={thumbnail} className='border border-[#f3f3f3]  bg-[rgba(0,0,0,0)]' style={{ transition: 'width 0.5s ease' }} />
+            <div className="bg-[rgba(0,0,0,0)] hover:bg-[rgba(0,0,0,0.2)] w-full h-full absolute transition-all duration-300" ></div>
             <IconPlay></IconPlay>
         </div>
+        <div className="flex flex-row justify-center pl-4 pr-4">
           <p className="text-[0.55rem] font-bold mb-4">{name}</p>
+          {/* <p className="text-[0.55rem] font-bold mb-4 text-gray-600">10</p> */}
+        </div>
      </div>
   </>
   );
