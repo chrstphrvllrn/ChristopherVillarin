@@ -39,7 +39,7 @@ const Portfolio = () => {
                     text-left 
                     pl-8 sm:pl-8 md:pl-16 
                     pr-8 sm:pr-8 md:pr-16
-                    sm:max-w-[100%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] 2xl:max-w-[1636px]
+                    sm:max-w-[100%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] 2xl:max-w-[100%]
                     transition-all duration-500">
                         <div className="
                         w-full 

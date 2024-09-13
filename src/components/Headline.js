@@ -20,12 +20,13 @@ function Headline() {
                         pl-8 sm:pl-8 md:pl-16 
                         pr-8 sm:pr-8 md:pr-0
                         flex flex-col md:flex-row " >
+                               {/* sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] 2xl:max-w-[1636px]  */}
                         <div className="
                             w-full flex flex-col 
                             text-left 
                             justify-center 
                             mx-auto 
-                            sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] 2xl:max-w-[1636px] 
+                         
                             py-10 sm:py-4 md:py-4 lg:py-5 xl:py-5 
                             gap-y-7 sm:gap-y-7 md:gap-y-6 lg:gap-y-7 xl:gap-y-8
                             "> {/**/}
