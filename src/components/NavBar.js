@@ -50,8 +50,10 @@ const NavBar = () => {
                                 </Link>
                                 <button onClick={() => navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')} className='pt-3 pb-3   pl-3 pr-3 bg-[#fff]  rounded-r-full' >
                                     <IconGmail></IconGmail>
-                                </button>
+                                </button> 
 
+                                {/* <button className='text-sm  text-[#1B224A] hover:text-[#2E2F2F] w-[120px] rounded-full font-medium  py-3 px-0  transition-all duration-300 ease-in-out ' style={{ transition: 'background-color 0.3s' }}>Contact</button> */}
+                                                
                             </div>
                         </div>
                 </div>
