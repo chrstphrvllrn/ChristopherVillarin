@@ -20,7 +20,7 @@ const NavBar = () => {
                         hidden sm:flex md:flex lg:flex xl:flex'>
                             <Link to="/" 
                             className='
-                            hover:text-[#000]
+                            hover:text-[#2E2F2F]
                             rounded-l-full
                             bg-[#fff]
                             hover:bg-[#D5D5D8]' 
@@ -29,12 +29,12 @@ const NavBar = () => {
                             </Link>
                             {/*bg-[#f3f3f3] hover:bg-[#fac541]*/}
                             {/* bg-[#f3f3f3] hover:bg-[#f3f3f3]  */}
+                            {/* <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
+                            <Link to="/portfolio" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PORTFOLIO</li></Link> */}
                             <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/portfolio" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PORTFOLIO</li></Link>
+                            <Link to="/history" className='hover:text-[#2E2F2F] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}><li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
                             <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/history" className='hover:text-[#000] bg-[#fff] hover:bg-[#f3f3f3] ' style={{ transition: 'background-color 0.3s' }}><li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
-                            <p className='pt-3 pb-3 font-light text-gray-300 bg-[#fff]'>|</p>
-                            <Link to="/skills" className='hover:text-[#000] rounded-r-full bg-[#fff] hover:bg-[#D5D5D8]' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'  >SKILLS</li></Link>
+                            <Link to="/skills" className='hover:text-[#2E2F2F] rounded-r-full bg-[#fff] hover:bg-[#D5D5D8]' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'  >SKILLS</li></Link>
                             {/* <button className='bg-[#000000] text-[#FFF] w-[100px] h-5/6 rounded-full font-regular'>Learn More</button> */}
                         </ul>
                         {/* <ul className='flex bg-[#f3f3f3] rounded-full font-medium text-sm sm:text-sm md:text-sm lg:text-sm xl:text-md hover:bg-[#fac541] hover:text-[#000] cursor-pointer'>

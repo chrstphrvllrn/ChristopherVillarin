@@ -11,7 +11,7 @@ import Portfolio from './components/Portfolio.js';
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
-  { path: "/portfolio", element: <Portfolio /> },
+  // { path: "/portfolio", element: <Portfolio /> },
   { path: "/history", element: <History /> },
   { path: "/skills", element: <Skills /> }
 ])

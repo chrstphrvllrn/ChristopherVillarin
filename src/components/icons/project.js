@@ -13,7 +13,7 @@ function Project({thumbnail, name}) {
             <IconPlay></IconPlay>
         </div>
         <div className="flex flex-row justify-center pl-4 pr-4">
-          <p className="text-[0.55rem] font-bold mb-4">{name}</p>
+          <p className="text-[0.55rem] font-bold mb-4 text-[#2E2F2F]">{name}</p>
           {/* <p className="text-[0.55rem] font-bold mb-4 text-gray-600">10</p> */}
         </div>
      </div>
