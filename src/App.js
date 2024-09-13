@@ -19,7 +19,7 @@ function App() {
                       mx-auto 
                       sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1080px] 2xl:max-w-[1536px] 
                       py-10 sm:py-4 md:py-4 lg:py-5 xl:py-5 
-                      gap-y-2 sm:gap-y-2 md:gap-y-5 lg:gap-y-5 xl:gap-y-6
+                      gap-y-7 sm:gap-y-7 md:gap-y-6 lg:gap-y-7 xl:gap-y-8
                       "> {/**/}
                       <p className='
                  
