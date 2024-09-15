@@ -75,7 +75,7 @@ function Headline() {
                     transition-all 
                     duration-300
                     ease-in-out" >
-                        <div className="w-full sm:w-full md:w-full min-h-[50vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] text-[#030303] font-light bg-[url('./images/background/iphone.png')] bg-contain bg-center bg-no-repeat xl:bg-contain lg:bg-contain md:bg-contain sm:bg-contain " >
+                        <div className="w-full sm:w-full md:w-full min-h-[50vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] text-[#030303] font-light bg-[url('./images/background/iphone.jpg')] bg-contain bg-center bg-no-repeat xl:bg-contain lg:bg-contain md:bg-contain sm:bg-contain " >
                         </div>
 
                     </div>
