@@ -75,9 +75,12 @@ function Headline() {
                     transition-all 
                     duration-300
                     ease-in-out" >
-                        <div className="w-full sm:w-full md:w-full min-h-[50vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] text-[#030303] font-light bg-[url('./images/background/iphone.jpg')] bg-contain bg-center bg-no-repeat xl:bg-contain lg:bg-contain md:bg-contain sm:bg-contain " >
+                        <div className="w-full sm:w-full md:w-full min-h-[50vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] text-[#030303] font-light bg-[url('./images/background/iphone7.jpg')] bg-contain bg-center bg-no-repeat xl:bg-contain lg:bg-contain md:bg-contain sm:bg-contain " >
                         </div>
-
+                        {/* https://www.freepik.com/premium-vector/man-sits-desk-with-laptop-plant-background_245630311.htm#query=programmer&position=16&from_view=keyword&track=ais_hybrid&uuid=6de44dc7-e8e8-4e15-9c68-9e9c11029bc8 */}
+                        {/* https://www.freepik.com/premium-vector/illustration-programmer-computer-vector-technology-concept-web-digital-design-programming_246000501.htm#from_view=detail_alsolike */}
+                        {/* https://www.freepik.com/premium-vector/man-sits-desk-with-computer-monitor-showing-man-working-his-computer_245642724.htm#from_view=detail_alsolike */}
+                        {/* https://www.freepik.com/premium-vector/illustration-programmer-computer-vector-technology-concept-web-digital-design-programming_246000604.htm#from_view=detail_alsolike */}
                     </div>
             </section>
 </div>);
