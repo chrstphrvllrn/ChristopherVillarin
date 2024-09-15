@@ -44,10 +44,16 @@ function Headline() {
                             sequence={[
                                 // Same substring at the start will only be typed once, initially
                                 `Hey there, I'm`,
-                                3000,
+                                2000,
+                                ``,
+                                100,
+                                `Hey there, I'm`,
+                                2000,
+                                ``,
+                                500,
                             
                             ]}
-                            speed={20}
+                            speed={40}
                             style={{ whiteSpace: 'pre-line',  display: 'block' }}
                             repeat={Infinity}
                             />
