@@ -26,7 +26,7 @@ const Portfolio = () => {
                 flex-col 
                 text-[#030303] 
                 font-light 
-                bg-gradient-to-br from-stone-50 to-neutral-100
+                bg-background-light
                 py-20
                 ">
                     <div className="

@@ -5,7 +5,20 @@
 // import { Link } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation';
 
+import React, { useEffect } from 'react';
+import WebFont from 'webfontloader';
+
+
 function Headline() {
+
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Bebas Neue', 'Anton']
+          }
+        });
+      }, []);
+
     return (
       <div className=''>
 
@@ -37,7 +50,7 @@ function Headline() {
                             font-light 
                             w-full 
                             leading-none
-                            text-[#2E2F2F] 
+                            text-textStrong
                             transition-all duration-300 ease-in-out'>
                                 {/* Hey there, I'm */}
                                 <TypeAnimation
@@ -63,7 +76,7 @@ function Headline() {
                             text-6xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-[9rem] 2xl:text-[10rem] 
                             font-medium 
                             bebas-neue-regular 
-                            text-[#508989] 
+                            text-text-brand
                             transition-all duration-300 ease-in-out
                             leading-[0.8em] sm:leading-[0.8em] md:leading-[0.8em] xl:leading-[0.8em]'>
                        
@@ -83,9 +96,9 @@ function Headline() {
                             </p>{/**bg-gradient-to-b from-[#7383F7] to-[#508989] bg-clip-text text-transparent*/}
                             {/* <p className='text-4xl p-4 font-light w-full leading-snug text-[#1B224A] '>Hey there, I'm<br />  <p className='text-6xl md:text-8xl lg:text-9xl xl:text-9xl font-medium bebas-neue-regular text-[#1B224A] bg-gradient-to-b from-[#4164A1] via-[#7A4A8A] to-[#7A4A8A] bg-clip-text text-transparent '>CHRISTOPHER<br />VILLARIN</p></p> */}
                             
-                                <p className='text-sm px-8 sm:px-8 md:px-4 text-[#626c81] w-full font-light transition-all duration-300 ease-in-out'>a Front End Developer / Creative Developer<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br />tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p className='text-sm px-8 sm:px-8 md:px-4 text-text-light w-full font-light transition-all duration-300 ease-in-out'>a Front End Developer / Creative Developer<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br />tempor incididunt ut labore et dolore magna aliqua. </p>
                                 <div className='w-full flex flex-row px-8 sm:px-8 md:px-4 '>
-                                <button className='text-sm bg-[#2E2F2F] hover:bg-[#f3f3f3] text-[#fff] hover:text-[#2E2F2F] w-[140px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-300 ease-in-out' style={{ transition: 'background-color 0.3s' }}>Contact me</button>
+                                <button className='text-sm bg-button-dark hover:bg-button-light text-[#fff] hover:text-[#2E2F2F] w-[140px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-300 ease-in-out' style={{ transition: 'background-color 0.3s' }}>Contact me</button>
                                 {/* <button className='text-sm bg-[#f3f3f3] hover:bg-[#2E2F2F] text-[#1B224A] hover:text-[#fff] w-[140px] rounded-full font-medium  py-3 px-1  transition-all duration-300 ease-in-out ' style={{ transition: 'background-color 0.3s' }}>Contact</button> */}
                                 
                                 {/* <Link to="https://www.linkedin.com/in/christophervillarin" target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>

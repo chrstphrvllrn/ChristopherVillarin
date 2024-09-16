@@ -6,7 +6,7 @@ function IconGmail(props) {
     <>
     <div className="rounded-xl "> 
       <svg
-    className="fill-current text-[#2E2F2F] hover:scale-110 hover:text-[#508989] transition-colors duration-100 cursor-pointer"
+    className="fill-current text-button-dark hover:scale-110 hover:text-button-brand transition-colors duration-100 cursor-pointer"
       viewBox="0 0 24 24"
       fill="currentColor"
       height="1.4em"
