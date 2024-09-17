@@ -1,16 +1,5 @@
 import React from 'react'
-// import NavBar from './NavBar.js'
-import banner1 from '../images/thumbnails/banner_1.png';
-// import banner2 from '../images/thumbnails/banner_2.png';
-import banner3 from '../images/thumbnails/banner_3.png';
-import banner4 from '../images/thumbnails/banner_6.png';
-import banner5 from '../images/thumbnails/banner_5.png';
-import banner6 from '../images/thumbnails/banner_11.png';
-import banner7 from '../images/thumbnails/banner_8.png';
-// import banner8 from '../images/thumbnails/banner_2.png';
-import banner9 from '../images/thumbnails/banner_9.png';
-import banner10 from '../images/thumbnails/banner_10.png';
-// import blank from '../images/blank.png';
+import { workSamples } from '../constants/index.js';
 import Project from '../components/icons/project.js';
 
 
@@ -54,19 +43,11 @@ const Portfolio = () => {
                         gap-15
                         transition-all 
                         duration-500">
-                                <Project thumbnail={banner1} name="Banner • 2024 "  ></Project>
-                                <Project thumbnail={banner3} name="Banner • 2024" ></Project>
-                                <Project thumbnail={banner9} name="Banner • 2024" ></Project>
-                                <Project thumbnail={banner5} name="Banner • 2024" ></Project>
 
-                                <Project thumbnail={banner6} name="Banner • 2024" ></Project>
-                                <Project thumbnail={banner7} name="Banner • 2024" ></Project>
-                                <Project thumbnail={banner4} name="Banner • 2024" ></Project>
-                                <Project thumbnail={banner10} name="Banner • 2024" ></Project>
-                                {/* <Project thumbnail={banner2} name="banner" ></Project>
-                                <Project thumbnail={banner2} name="banner" ></Project>
-                                <Project thumbnail={banner2} name="banner" ></Project>
-                                <Project thumbnail={banner2} name="banner" ></Project> */}
+                                { workSamples.map((item) => (
+                               <Project thumbnail={item.imgURL} name={item.name}  ></Project>
+                                ))}             
+                                 
                             </div>
                 </div>
             </div>

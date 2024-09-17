@@ -12,6 +12,7 @@ const NavBar = () => {
         <div className='
         w-full text-text-dark font-light 
         py-3 sm:py-3  md:py-5 lg:py-6 xl:py-6 px-8 sm:px-8 md:px-4 '>
+          
             <div className="h-10 mx-auto md:px-14 lg:px-27 flex"> 
               
                 <div className='w-full flex flex-row justify-center items-center'>
@@ -37,17 +38,27 @@ const NavBar = () => {
                    
                        </div>
                        <div className='w-3/4 hidden max-md:block justify-start'>
+
                              <Hamburger></Hamburger>
+                       
                         </div>
                        <div className='w-1/4 flex flex-row justify-end'>
+                            
                             <div className='flex flex-row items-center'>
+                                
                                 <Link to="https://www.linkedin.com/in/christophervillarin" target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>
+                                 
                                     <IconLinkedin></IconLinkedin>
+                                
                                 </Link>
+                               
                                 <div onClick={() => navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')} className='pt-3 pb-3 pl-3 pr-3 bg-[#fff] rounded-r-full' >
+                                 
                                     <IconGmail></IconGmail>
+                               
                                 </div> 
        
+                           
                             </div>
                         </div>
                 </div>
