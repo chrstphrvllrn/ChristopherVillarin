@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
 import Hamburger from '../components/icons/hamburger'
+import { socialMedia  } from '../constants/index';
+
 
 const NavBar = () => {
     return (
@@ -22,7 +24,7 @@ const NavBar = () => {
                         <ul className='flex rounded-full font-medium 
                         sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm
                        
-                        sm:flex md:flex lg:flex xl:flex'>
+                        sm:flex md:flex lg:flex xl:flex '>
                             <Link to="/" className='hover:text-button-dark bg-white'  style={{ transition: 'background-color 0.3s' }}> 
                                 <li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >HOME</li>
                             </Link>
@@ -47,13 +49,13 @@ const NavBar = () => {
                             
                             <div className='flex flex-row items-center'>
                                 
-                                <Link to="https://www.linkedin.com/in/christophervillarin" target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>
+                                <Link to={socialMedia.linkedin.value} target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>
                                  
                                     <IconLinkedin></IconLinkedin>
                                 
                                 </Link>
                                
-                                <div onClick={() => navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')} className='pt-3 pb-3 pl-3 pr-3 bg-[#fff] rounded-r-full' >
+                                <div onClick={() => navigator.clipboard.writeText(`${socialMedia.gmail.value}`)} className='pt-3 pb-3 pl-3 pr-3 bg-[#fff] rounded-r-full' >
                                  
                                     <IconGmail></IconGmail>
                                

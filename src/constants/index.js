@@ -11,3 +11,9 @@ export const workSamples = [
     { imgURL: require('../images/thumbnails/banner_6.png'), name: 'Banner • 2024', },
     { imgURL: require('../images/thumbnails/banner_10.png'), name: 'Banner • 2024', }
 ];
+
+
+export const socialMedia = {
+    linkedin: { value: 'https://www.linkedin.com/in/christophervillarin' },
+    gmail: { value: 'christopher.villarin.wo@gmail.com' },
+};

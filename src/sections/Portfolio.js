@@ -9,15 +9,19 @@ const Portfolio = () => {
         //  style={{ backgroundImage: `url(${bgImage})` }}
         <>
    
-            <section className="
+                {/* bg-[url("./images/background/backgroundportfolio.svg")]
+                bg-cover 
+                bg-center
+                bg-no-repeat */}
+            <section className='
                 w-full 
                 flex 
                 flex-col 
                 text-[#030303] 
                 font-light 
-                bg-background-light
                 py-10 md:py-20
-                ">
+                bg-background-light
+                '>
                     <div className="
                     w-full 
                     h-auto min-h-[50vh] 

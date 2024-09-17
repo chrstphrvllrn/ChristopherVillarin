@@ -24,7 +24,9 @@ function Headline() {
             flex 
             flex-col md:flex-row 
             min-h-[85vh] sm:min-h-[85vh] md:min-h-[45vh] lg:min-h-[70vh] xl:min-h-[70vh] 
-            transition-all duration-150 ease-in-out '>
+            transition-all duration-150 ease-in-out 
+          
+            '>
                     
                     <div className="
                         w-full sm:w-full md:w-1/2 
