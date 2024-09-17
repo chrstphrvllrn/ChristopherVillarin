@@ -7,16 +7,16 @@ const Portfolio = () => {
     return (
         // bg-[url('https://fastly.picsum.photos/id/972/1600/900.jpg?grayscale&hmac=W638WD8WqRiozMXbLvTcudGIQ8EFsXe7ljBjSXFSCz0')] bg-center
         //  style={{ backgroundImage: `url(${bgImage})` }}
-        <div className=''>
-        {/* bg-[f3f3f3]*/}
-            <div className="
+        <>
+   
+            <section className="
                 w-full 
                 flex 
                 flex-col 
                 text-[#030303] 
                 font-light 
                 bg-background-light
-                py-20
+                py-10 md:py-20
                 ">
                     <div className="
                     w-full 
@@ -44,15 +44,15 @@ const Portfolio = () => {
                         transition-all 
                         duration-500">
 
-                                { workSamples.map((item) => (
-                               <Project thumbnail={item.imgURL} name={item.name}  ></Project>
+                                { workSamples.map(( item ) => (
+                               <Project thumbnail={ item.imgURL } name={ item.name }></Project>
                                 ))}             
-                                 
+
                             </div>
                 </div>
-            </div>
+            </section>
         
-        </div>
+      </>
     )
 }
 

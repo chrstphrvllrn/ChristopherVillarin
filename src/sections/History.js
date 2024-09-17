@@ -9,10 +9,10 @@ import certificate from '../images/icons/certificate.svg';
 const History = () => {
     return (
 
-        <div className=''>
+        <>
             <NavBar />
 
-            <div className="w-full flex flex-col md:flex-row text-[#1B224A] font-light mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] ">
+            <section className="w-full flex flex-col md:flex-row text-[#1B224A] font-light mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] ">
 
                 <div className="w-1/2  min-h-[30vh] flex flex-col md:flex-col text-[#1B224A] font-light mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] p-5 m-5 gap-5 ">
                     <p className='text-md font-bold'>Where I've been..</p>
@@ -39,7 +39,7 @@ const History = () => {
                 </div>
 
 
-            </div>
+            </section>
 
             {/* <div className="w-full flex flex-col md:flex-row text-[#030303] font-light  ">
                 <div className="w-full min-h-[40vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> 
@@ -81,7 +81,7 @@ const History = () => {
                 </div>
                
             </div> */}
-        </div>
+        </>
     )
 }
 

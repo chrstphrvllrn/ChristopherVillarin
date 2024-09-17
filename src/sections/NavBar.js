@@ -1,7 +1,7 @@
 
 
 
-import React from 'react'
+// import React from 'react'
 import { Link } from 'react-router-dom'
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
@@ -9,7 +9,8 @@ import Hamburger from '../components/icons/hamburger'
 
 const NavBar = () => {
     return (
-        <div className='
+        <>
+        <section className='
         w-full text-text-dark font-light 
         py-3 sm:py-3  md:py-5 lg:py-6 xl:py-6 px-8 sm:px-8 md:px-4 '>
           
@@ -64,7 +65,8 @@ const NavBar = () => {
                 </div>
 
             </div >
-        </div >
+        </section >
+        </>
     )
 }
 
