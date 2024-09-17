@@ -11,7 +11,7 @@ import banner7 from '../images/thumbnails/banner_8.png';
 import banner9 from '../images/thumbnails/banner_9.png';
 import banner10 from '../images/thumbnails/banner_10.png';
 // import blank from '../images/blank.png';
-import Project from './icons/project.js';
+import Project from '../components/icons/project.js';
 
 
 const Portfolio = () => {
@@ -70,21 +70,7 @@ const Portfolio = () => {
                             </div>
                 </div>
             </div>
-            {/* <div className="w-full flex flex-col md:flex-row text-[#030303] font-light bg-slate-50  ">
-                <div className="w-full h-auto flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] gap-3">
-                    <div className="w-full h-full flex items-center flex-col sm:flex-col md:flex-col lg:flex-row sm:items-center ">
-                        
-                    </div>
-                </div>
-            </div>
-            <div className="w-full flex flex-col md:flex-row text-[#030303] font-light  bg-slate-50 ">
-                <div className="w-full h-auto flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px] gap-3">
-                <div className="w-full h-full flex items-center flex-col sm:flex-col md:flex-col lg:flex-row sm:items-center ">
-                        
-                    </div>
-                </div>
-            </div> */}
-
+        
         </div>
     )
 }

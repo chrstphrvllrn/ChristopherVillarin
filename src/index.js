@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import History from './components/History.js'
-import Skills from './components/Skills.js'
-import Portfolio from './components/Portfolio.js';
+import History from './sections/History.js'
+import Skills from './sections/Skills.js'
+// import Portfolio from './sections/Portfolio.js';
 
 
 const router = createBrowserRouter([

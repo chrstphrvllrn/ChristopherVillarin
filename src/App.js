@@ -1,7 +1,7 @@
-import NavBar from './components/NavBar.js'
-import Portfolio from './components/Portfolio.js'
-import Footer from './components/Footer.js'
-import Headline from './components/Headline.js'
+import NavBar from './sections/NavBar.js'
+import Portfolio from './sections/Portfolio.js'
+import Footer from './sections/Footer.js'
+import Headline from './sections/Headline.js'
 
 function App() {
   return (
