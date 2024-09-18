@@ -14,28 +14,34 @@ const NavBar = () => {
         <>
         <section className='
         w-full text-text-dark font-light 
-        py-3 sm:py-3  md:py-5 lg:py-6 xl:py-6 px-8 sm:px-8 md:px-4 '>
+        py-3 sm:py-3  md:py-5 lg:py-6 xl:py-6 
+        pl-8 sm:pl-8 md:pl-16 
+        pr-8 sm:pr-8 md:pr-16
+      '>
           
-            <div className="h-10 mx-auto md:px-14 lg:px-27 flex"> 
+            <div className="h-10 mx-auto  flex"> 
               
-                <div className='w-full flex flex-row justify-center items-center'>
+                <div className='w-full flex flex-row justify-center items-center '>
                  
                     <div className='w-3/4 flex flex-row justify-start gap-10  max-md:hidden '>
                         <ul className='flex rounded-full font-medium 
                         sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm
-                       
+                        pl-0 sm:pl-8 md:pl-4 lg:pl-4 xl:pl-4 
+                      
                         sm:flex md:flex lg:flex xl:flex '>
                             <Link to="/" className='hover:text-button-dark bg-white'  style={{ transition: 'background-color 0.3s' }}> 
-                                <li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >HOME</li>
+                                <li className='py-3  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >HOME</li>
                             </Link>
                   
-                            <p className='pt-3 pb-3 font-light text-gray-300 bg-white'>|</p>
+                            <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
-                            <Link to="/history" className='hover:text-button-dark bg-white' style={{ transition: 'background-color 0.3s' }}><li className='p-3 mx-5 md:mx-2  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
+                            <Link to="/history" className='hover:text-button-dark bg-white' style={{ transition: 'background-color 0.3s' }}>
+                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
                             
-                            <p className='pt-3 pb-3 font-light text-gray-300 bg-white'>|</p>
+                            <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
-                            <Link to="/skills" className='hover:text-button-dark bg-white ' style={{ transition: 'background-color 0.3s' }}> <li className='p-3 mx-5 md:mx-2 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'  >SKILLS</li></Link>
+                            <Link to="/skills" className='hover:text-button-dark bg-white ' style={{ transition: 'background-color 0.3s' }}>
+                                <li className='py-3 cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out'  >SKILLS</li></Link>
                            
                         </ul>
                    
@@ -47,15 +53,16 @@ const NavBar = () => {
                         </div>
                        <div className='w-1/4 flex flex-row justify-end'>
                             
-                            <div className='flex flex-row items-center'>
+                            <div className='flex flex-row items-cente gap-4
+                              pr-0 sm:pr-0 md:pr-4 lg:pr-4 xl:pr-4 '>
                                 
-                                <Link to={socialMedia.linkedin.value} target="_blank" rel="noopener noreferrer" className='pt-3 pb-3  pl-3 pr-3 bg-[#fff] rounded-l-full'>
+                                <Link to={socialMedia.linkedin.value} target="_blank" rel="noopener noreferrer" >
                                  
                                     <IconLinkedin></IconLinkedin>
                                 
                                 </Link>
                                
-                                <div onClick={() => navigator.clipboard.writeText(`${socialMedia.gmail.value}`)} className='pt-3 pb-3 pl-3 pr-3 bg-[#fff] rounded-r-full' >
+                                <div onClick={() => navigator.clipboard.writeText(`${socialMedia.gmail.value}`)}  >
                                  
                                     <IconGmail></IconGmail>
                                
