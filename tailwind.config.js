@@ -6,9 +6,13 @@ module.exports = {
       colors:{
        text:{
           light: '#595F7A',
+          lightgrey: '#8086A6',
           brand: '#4F8989',
           dark:'#2E2F2F',
+          darkgrey: '#595F7A',
           darkblue:'#1A203C',
+          lightlightlight: '#F5F6FA',
+          lightlight:'#E5E7F0'
         },
         background: {
           DEFAULT: '#fff',
@@ -20,6 +24,8 @@ module.exports = {
           light: '#f3f3f3',
           brand: '#4F8989',
           dark: '#2E2F2F', 
+          darkgrey: '#595F7A',
+          lightgrey: '#8086A6',
           darkblue:'#1A203C', 
         },
         stroke:{

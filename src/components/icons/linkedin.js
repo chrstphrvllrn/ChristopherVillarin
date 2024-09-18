@@ -6,7 +6,7 @@ function IconLinkedin(props) {
     <>
      <div className="rounded-xl ">
       <svg
-        className="fill-current text-button-dark hover:scale-110 hover:text-button-brand transition-colors duration-300 cursor-pointer"
+        className="fill-current text-button-dark hover:scale-100 hover:text-button-lightgrey transition-colors duration-300 cursor-pointer"
         viewBox="0 0 1024 1024"
         fill="currentColor"
         height="2em"

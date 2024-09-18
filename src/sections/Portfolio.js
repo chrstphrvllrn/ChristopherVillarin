@@ -34,6 +34,7 @@ const Portfolio = () => {
                     pr-8 sm:pr-8 md:pr-16
                     sm:max-w-[100%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] 2xl:max-w-[100%]
                     transition-all duration-500">
+                        <p className='w-full flex justify-center py-5 font-medium text-text-dark '>SOME OF MY LATEST WORK</p>
                         <div className="
                         w-full 
                         h-full 
@@ -44,7 +45,7 @@ const Portfolio = () => {
                         sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 
                         ease-in-out 
                         transform 
-                        gap-15
+                        gap-7
                         transition-all 
                         duration-500">
 
@@ -52,7 +53,7 @@ const Portfolio = () => {
                                <Project thumbnail={ item.imgURL } name={ item.name }></Project>
                                 ))}             
 
-                            </div>
+                       </div>
                 </div>
             </section>
         
