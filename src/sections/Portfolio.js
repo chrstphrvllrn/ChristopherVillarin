@@ -41,13 +41,14 @@ const Portfolio = () => {
                         flex 
                         items-center 
                         flex-wrap 
-                        justify-center 
+                        justify-center
                         sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 
                         ease-in-out 
                         transform 
                         gap-7
                         transition-all 
-                        duration-500">
+                        duration-500
+                        ">
 
                                 { workSamples.map(( item ) => (
                                <Project thumbnail={ item.imgURL } name={ item.name }></Project>
