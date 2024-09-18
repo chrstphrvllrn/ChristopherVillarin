@@ -14,8 +14,12 @@ const Skills = () => {
             <NavBar />
             
 
-            <div className="w-full flex flex-col md:flex-row text-[#030303] font-light  ">
-                <div className="w-full min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> {/**/}
+            <div className="w-full flex flex-col md:flex-row text-[#030303] font-light 
+                pl-8 sm:pl-8 md:pl-16 
+                pr-8 sm:pr-8 md:pr-16 
+                py-8
+                ">
+                <div className="w-1/2 min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> {/**/}
                     <div>ReactJS, TailwindCSS, NodeJS, ExpressJS, MongoDB</div>
                     <div>Favorite Tools</div>
                     <Link to="https://responsively.app/" target="_blank" rel="noopener noreferrer" className='hover:text-green-600'>Responsively.app</Link>
@@ -31,12 +35,15 @@ const Skills = () => {
                     <div>Knowledge of SEO principles</div>
                     <div>In-depth understanding of the entire web development process (design, development and deployment)</div>
                     <div>Familiarity with software like Adobe Suite, Photoshop and content management systems</div>
-                    <div>HTML</div>
                     <div>CSS</div>
                     <div>JavaScript</div>
                     <div>Responsive Web Design</div>
                     <div>CSS Preprocessors</div>
                     <div>Version Control/Git</div>
+                 
+                </div>
+                <div className="w-1/2 min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]">
+                <div>HTML</div>
                     <div>Front End Frameworks</div>
                     <div>Web Performance Optimization</div>
                     <div>Cross-Browser Compatibility</div>
@@ -57,9 +64,7 @@ const Skills = () => {
                     <div>Help back-end developers with coding and troubleshooting</div>
                     <div>Ensure high quality graphic standards and brand consistency</div>
                     <div>Stay up-to-date on emerging technologies</div>
-
-
-                </div>
+                    </div>
             </div>
         </div>
     )

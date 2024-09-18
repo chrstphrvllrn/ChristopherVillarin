@@ -23,7 +23,7 @@ function Headline() {
             <section className='
             flex 
             flex-col md:flex-row 
-            min-h-[85vh] sm:min-h-[85vh] md:min-h-[45vh] lg:min-h-[70vh] xl:min-h-[70vh] 
+            min-h-[75vh] sm:min-h-[75vh] md:min-h-[45vh] lg:min-h-[70vh] xl:min-h-[80vh] 
             transition-all duration-150 ease-in-out 
           
             '>
@@ -103,7 +103,7 @@ function Headline() {
 
                         <div className="
                         w-full 
-                        min-h-[50vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] 
+                        min-h-[40vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[70vh] xl:min-h-[80vh] 
                         bg-[url('./images/background/iphone7.jpg')] 
                         bg-contain 
                         bg-center

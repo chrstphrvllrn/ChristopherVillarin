@@ -20,7 +20,7 @@ function Footer() {
               
           </div>
 
-          <div className='w-full h-auto flex flex-row justify-end items-end max-sm:justify-start md:items-center lg:items-center'>
+          <div className='w-full h-auto flex flex-row justify-end items-end max-sm:justify-start max-md:justify-start md:items-center lg:items-center'>
                             
               <button 
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
