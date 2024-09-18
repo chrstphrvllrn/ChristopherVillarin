@@ -54,7 +54,7 @@ const Portfolio = () => {
                                 { workSamples.map(( item, index) => (
                                     
                                 
-                                    <ScrollAnimation  animateIn='fadeIn' animateOnce={false} duration={0.5} delay={100 * index}>
+                                    <ScrollAnimation  animateIn='fadeInUp' animateOnce={false} duration={0.5} delay={100 * index}>
                                             <Project thumbnail={ item.imgURL } name={ item.name }></Project>
 
                                     </ScrollAnimation>   
