@@ -23,8 +23,11 @@ const Skills = () => {
                 pr-8 sm:pr-8 md:pr-16 
                 py-8
                 ">
-                <div className="w-1/4 min-h-[70vh] flex flex-col text-left justify-start mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> {/**/}
+                <div className="w-full min-h-[70vh] flex flex-col text-left justify-start  mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> {/**/}
                     
+
+
+
                     <div className='flex flex-row flex-wrap gap-y-5 gap-x-2 justify-between'>
                     <div>Languages</div>
                     <div className='flex flex-row '>
@@ -101,7 +104,7 @@ const Skills = () => {
                     
                  
                 </div>
-                <div className="w-3/4 min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]">
+                {/* <div className="w-1/2 min-h-[70vh] flex flex-col text-left justify-center mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[924px] xl:max-w-[1240px]"> */}
                     {/* <div>HTML</div>
                     <div>Front End Frameworks</div>
                     <div>Web Performance Optimization</div>
@@ -123,7 +126,7 @@ const Skills = () => {
                     <div>Help back-end developers with coding and troubleshooting</div>
                     <div>Ensure high quality graphic standards and brand consistency</div>
                     <div>Stay up-to-date on emerging technologies</div> */}
-                    </div>
+                    {/* </div> */}
             </div>
         </div>
     )

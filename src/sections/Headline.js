@@ -42,6 +42,7 @@ function Headline() {
                             py-10 sm:py-4 md:py-4 lg:py-5 xl:py-5 
                             gap-y-7 sm:gap-y-7 md:gap-y-6 lg:gap-y-7 xl:gap-y-8
                             ">  
+                            
                             <p className='
                             pl-0 sm:pl-8 md:pl-4 lg:pl-4 xl:pl-4 
                             text-4xl 
@@ -62,8 +63,10 @@ function Headline() {
                             style={{ whiteSpace: 'pre-line',  display: 'block' }}
                             repeat={Infinity}
                             />
+                        
                              </p> 
-                            <h1 className='
+
+                               <h1 className='
                             pl-0 sm:pl-8 md:pl-4 lg:pl-4 xl:pl-4 
                             text-7xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-[8rem] 2xl:text-[9rem] 3xl:text-[10rem] 4xl:text-[14rem]
                             font-medium 
@@ -77,6 +80,7 @@ function Headline() {
                             CHRISTOPHER<br />VILLARIN
 
                             </h1>
+                                                       
                                 <p className='text-sm px-0 sm:px-8 md:px-4 text-text-light w-full font-light transition-all duration-150 ease-in-out select-none'>a Front End Developer / Creative Developer<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 <div className='w-full flex flex-row px-0 sm:px-8 md:px-4 '>
                                 <button 
@@ -114,6 +118,7 @@ function Headline() {
                         {/* https://www.freepik.com/premium-vector/man-sits-desk-with-computer-monitor-showing-man-working-his-computer_245642724.htm#from_view=detail_alsolike */}
                         {/* https://www.freepik.com/premium-vector/illustration-programmer-computer-vector-technology-concept-web-digital-design-programming_246000604.htm#from_view=detail_alsolike */}
                     </div>
+                   
             </section>
     </>
     );

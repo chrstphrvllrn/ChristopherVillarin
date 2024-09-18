@@ -1,7 +1,8 @@
 import React from 'react'
 import { workSamples } from '../constants/index.js';
 import Project from '../components/icons/project.js';
-
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.compat.css"
 
 const Portfolio = () => {
     return (
@@ -49,13 +50,23 @@ const Portfolio = () => {
                         transition-all 
                         duration-500
                         ">
+                                
+                                { workSamples.map(( item, index) => (
+                                    
+                                
+                                    <ScrollAnimation  animateIn='fadeIn' animateOnce={false} duration={0.5} delay={100 * index}>
+                                            <Project thumbnail={ item.imgURL } name={ item.name }></Project>
 
-                                { workSamples.map(( item ) => (
-                               <Project thumbnail={ item.imgURL } name={ item.name }></Project>
-                                ))}             
+                                    </ScrollAnimation>   
+                           
+                                ))}     
+                              
+                                
+                            
 
                        </div>
                 </div>
+              
             </section>
         
       </>
