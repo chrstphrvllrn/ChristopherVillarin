@@ -13,7 +13,7 @@ const Portfolio = () => {
                 bg-cover 
                 bg-center
                 bg-no-repeat */}
-            <section className='
+            <section id='myPortfolio' className='
                 w-full 
                 flex 
                 flex-col 

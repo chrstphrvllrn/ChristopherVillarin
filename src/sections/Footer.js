@@ -14,15 +14,17 @@ function Footer() {
       pl-8 sm:pl-8 md:pl-16 
       pr-8 sm:pr-8 md:pr-16'>
 
-          <div className='w-full h-auto flex flex-row justify-start items-end '>
+          <div className='w-full h-auto flex flex-row justify-start items-end md:items-center lg:items-center '>
                             
               <button className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">© 2024 Christopher Villarin</button>
               
           </div>
 
-          <div className='w-full h-auto flex flex-row justify-end items-end max-sm:justify-start '>
+          <div className='w-full h-auto flex flex-row justify-end items-end max-sm:justify-start md:items-center lg:items-center'>
                             
-              <button className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">Back on top</button>
+              <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">Back on top</button>
                             
           </div>
       </section>

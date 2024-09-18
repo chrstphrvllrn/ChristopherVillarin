@@ -38,6 +38,7 @@ const NavBar = () => {
                             <Link to="/history" className='hover:text-button-lightgrey bg-white' style={{ transition: 'background-color 0.3s' }}>
                                 <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
                             
+                        
                             <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
                             <Link to="/skills" className='hover:text-button-lightgrey bg-white ' style={{ transition: 'background-color 0.3s' }}>
