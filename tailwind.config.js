@@ -6,7 +6,7 @@ module.exports = {
       colors:{
        text:{
           light: '#595F7A',
-          lightgrey: '#8086A6',
+          lightgrey: '#5F5F5F',
           brand: '#4F8989',
           dark:'#2E2F2F',
           darkgrey: '#595F7A',
@@ -25,7 +25,7 @@ module.exports = {
           brand: '#4F8989',
           dark: '#2E2F2F', 
           darkgrey: '#595F7A',
-          lightgrey: '#8086A6',
+          lightgrey: '#5F5F5F',
           darkblue:'#1A203C', 
         },
         stroke:{

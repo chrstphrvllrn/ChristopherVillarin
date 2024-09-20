@@ -3,6 +3,7 @@ import { workSamples } from '../constants/index.js';
 import Project from '../components/icons/project.js';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
+// import Iframe from 'react-iframe'
 
 const Portfolio = () => {
     return (
@@ -23,6 +24,7 @@ const Portfolio = () => {
                 py-10 md:py-20
                 bg-background-light
                 '>
+      
                     <div className="
                     w-full 
                     h-auto min-h-[50vh] 
@@ -54,10 +56,10 @@ const Portfolio = () => {
                                 { workSamples.map(( item, index) => (
                                     
                                 
-                                    <ScrollAnimation  animateIn='fadeInUp' animateOnce={false} duration={0.5} delay={100 * index}>
-                                            <Project thumbnail={ item.imgURL } name={ item.name }></Project>
-
-                                    </ScrollAnimation>   
+                                    // <ScrollAnimation  animateIn='fadeInUp' animateOnce={false} duration={0.5} delay={100 * index}>
+                                           <Project id={item.id} thumbnail={item.thumbnail} banner={item.banner} name={ item.title } width={item.width} height={item.height}></Project>
+                                         
+                                    // </ScrollAnimation>   
                            
                                 ))}     
                               

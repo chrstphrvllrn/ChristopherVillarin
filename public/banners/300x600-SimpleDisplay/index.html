@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="ad.size" id='adSize'>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<link rel="preload" as="font" href="myFont.woff" type="font/woff" crossorigin="anonymous">-->
+        <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+        <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+		<script src="SplitText.min.js"></script>
+    </head>
+    <style></style>
+	<body>
+		<div id="container" class="container">
+
+			<div id="frame1Background-wrapper">
+				<img src="" id="frame1Background" />
+			</div>
+			<div id="logo-wrapper">
+				<img src="" id="logo"  />
+			</div>
+			<div id="frame1Headline-wrapper">
+				<p id="frame1Headline"  />
+			</div>
+			<div id="frame2Headline-wrapper">
+				<p id="frame2Headline" />
+			</div>
+			<div id="frame3Headline-wrapper">
+				<p id="frame3Headline"  />
+			</div>
+			<div id="frame1Subheadline-wrapper">
+				<p id="frame1Subheadline"  />
+			</div>
+			<div id="frame2Subheadline-wrapper">
+				<p id="frame2Subheadline"  />
+			</div>
+			<div id="frame3Subheadline-wrapper">
+				<p id="frame3Subheadline"  />
+			</div>
+
+			<div id="frame1Image-wrapper">
+				<img src="" id="frame1Image" />
+			</div>
+			<div id="frame2Image-wrapper">
+				<img src="" id="frame2Image" />
+			</div>
+			<div id="frame3Image-wrapper">
+				<img src="" id="frame3Image" />
+			</div>
+
+			<div id="cta-wrapper">
+				<p id="cta" />
+			</div>
+
+
+			<div id='exitButton' class='exitButton'></div>
+
+ 			<div id="replay_btn-wrapper">
+				<img src="replay-btn.png" id="replay_btn" />
+		   </div>
+
+		</div>
+	</body>
+	<script src='animation.js'></script>
+
+	<script>
+
+		var landingPage;
+
+		var format = "300x600";
+		document.getElementById('adSize').setAttribute('content','width='+format.split('x')[0]+', height='+format.split('x')[1]);
+		document.querySelector('#container').setAttribute('style','width:'+format.split('x')[0]+'px; height:'+format.split('x')[1]+'px');
+
+		function exitCall() {
+            Enabler.exitOverride("MainClick", landingPage);
+        }
+
+		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i); // This is to check if the unit is running in mobile so the event to be used is touchend
+
+		if (isMobile != null) {
+				const addTouchListener = (element, callback) => {
+					element.addEventListener('touchstart', () => {
+						element.addEventListener('touchend', callback, { once: true })
+					})
+					element.addEventListener('touchmove', () => {
+						element.removeEventListener('touchend', callback)
+					})
+					}
+					mobileEvent();
+
+		} else {
+					desktopEvent();
+		}
+
+		function mobileEvent(){
+			addTouchListener(document.getElementById('exitButton'), () => exitCall() )
+			addTouchListener(document.getElementById('replay_btn-wrapper'), () => replayAnimationCall() )
+
+
+		}
+		function desktopEvent(){
+			document.querySelector('#exitButton').addEventListener('click',exitCall);
+			document.querySelector('#replay_btn-wrapper').addEventListener('click',replayAnimationCall);
+		}
+
+		function populate(){
+			//exit
+			landingPage = "https://www.google.com"
+			//static
+			var replaybtn = "replaybtn.png";
+			//dynamic
+			var frame1Background = "background.png";
+			var logo  = "logo.png";
+			var frame1Headline = "Do you want<br>your home<br>or office<br>to be neat<br>and tidy?";
+			var frame2Headline = "Nobody<br>does it better";
+			var frame3Headline = "Discount 5%<br>for cleaners";
+			var frame1Subheadline = "Action in honor of the company’s 5th anniversary";
+			var frame2Subheadline = "Action in honor of the company’s 5th anniversary";
+			var frame3Subheadline = "Action in honor of the company’s 5th anniversary";
+			var frame1Image = "model1.png";
+			var frame2Image = "model2.png";
+			var frame3Image = "model3.png";
+			var cta = "More info";
+
+
+
+			//IMAGE
+			document.getElementById('frame1Background').setAttribute("src", frame1Background)
+			document.getElementById('logo').setAttribute("src", logo)
+			document.getElementById('frame1Image').setAttribute("src", frame1Image)
+			document.getElementById('frame2Image').setAttribute("src", frame2Image)
+			document.getElementById('frame3Image').setAttribute("src", frame3Image)
+			document.getElementById('logo').setAttribute("src", logo)
+
+			//TEXT
+			document.getElementById('frame1Headline').innerHTML = frame1Headline;
+			document.getElementById('frame2Headline').innerHTML = frame2Headline;
+			document.getElementById('frame3Headline').innerHTML = frame3Headline;
+			document.getElementById('frame1Subheadline').innerHTML = frame1Subheadline;
+			document.getElementById('frame2Subheadline').innerHTML = frame2Subheadline;
+			document.getElementById('frame3Subheadline').innerHTML = frame3Subheadline;
+			document.getElementById('cta').innerHTML = cta;
+		}
+
+
+
+		populate();
+		initAnimation();
+
+    </script>
+</html>

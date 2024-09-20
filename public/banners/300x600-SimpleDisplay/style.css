@@ -1,0 +1,148 @@
+/* @font-face {
+	font-family: "fontname";
+     src: url("fontfile.woff");
+} */
+
+.container {
+    position: absolute;
+    overflow:hidden;
+    transform: perspective(1920px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    background-color: white;
+	opacity:0;
+}
+.exitButton {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+#frame1Background-wrapper{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#frame1Background{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#logo-wrapper{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#logo{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+#frame1Image-wrapper, #frame2Image-wrapper, #frame3Image-wrapper{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+#frame1Image, #frame2Image, #frame3Image{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+#frame1Headline-wrapper, #frame2Headline-wrapper, #frame3Headline-wrapper{
+	position:absolute;
+	left:28px;;
+	top:73px;
+	width:237px;
+	height:197px;
+	opacity:0;
+}
+#frame1Headline, #frame2Headline, #frame3Headline{
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: left;
+	color: #fff;
+}
+
+#frame1Subheadline-wrapper{
+	position:absolute;
+	left:28px;
+	top:283px;
+	width:167px;
+	height:30px;
+	opacity:0;
+}
+ #frame2Subheadline-wrapper, #frame3Subheadline-wrapper{
+	position:absolute;
+	left:28px;;
+	top:168px;
+	width:167px;
+	height:30px;
+	opacity:0;
+}
+#frame1Subheadline, #frame2Subheadline, #frame3Subheadline{
+	font-family: "Helvetica Neue";
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: left;
+	color: #fff;
+}
+
+#cta-wrapper{
+	position:absolute;
+	left:28px;;
+	top:210px;
+	width:133px;
+	height:29px;
+	opacity:0;
+	border-radius: 14px;
+	background: linear-gradient(#eb4e2e 0%, #c73a27 100%);
+	display:flex;
+	justify-content: center;
+    align-items: center;
+}
+#cta{
+	font-family: "Helvetica Neue";
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: left;
+	color: #fff;
+}
+#replay_btn-wrapper {
+	position: absolute;
+	height: 13px;
+	top: 14px;
+	width: 46px;
+	left: 238px;
+	cursor:pointer;
+	visibility:hidden;
+	opacity:0;
+ }
+ #replay_btn{
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+ }
