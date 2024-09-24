@@ -22,10 +22,10 @@ function Footer() {
 
           <div className='w-full h-auto flex flex-row justify-end items-end max-sm:justify-start max-md:justify-start md:items-center lg:items-center'>
                             
-              {/* <button 
+              <button 
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">Back on top</button>
-                             */}
+                             
           </div>
       </section>
 
