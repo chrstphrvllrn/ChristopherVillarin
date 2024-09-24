@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="ad.size" id='adSize'>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<link rel="preload" as="font" href="myFont.woff" type="font/woff" crossorigin="anonymous">-->
+        <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+        <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+		<script src="CustomEase.min.js"></script>
+    </head>
+    <style></style>
+	<body>
+		<div id="maincontainer" class="maincontainer">
+
+			<!-- <div id='exitButton' class='exitButton'></div> -->
+
+            <div id="container">
+                <div id="background"> </div>
+                <div id="mario"> </div>
+                <div id="text" class='frame1Headline'></div>
+
+                <div id="animationcontainer">
+                        <div id="plant"> </div>
+                        <div id="ground"></div>
+                        <div id="mushroom"></div>
+                        <div id="questionblock"></div>
+                        <div id="questionblock1"></div>
+                        <div id="general"> </div>
+                        <div id="coin1"></div>
+                        <div id="coin2"></div>
+                        <div id="coin3"></div>
+                        <div id="coin4"></div>
+                        <div id="coin5"></div>
+                        <div id="coin6"></div>
+                </div>
+                <div id="close"></div>
+                <div id="mariologo"></div>
+                <div id="nintendologo"></div>
+                <div id="appstore"></div>
+                <div id="googleplay"></div>
+
+                <div id="gallery"> </div>
+
+                <audio  id="audiobg" loop> <source src="audiobg.mp3" type="audio/mpeg">   </audio>
+                <audio  id="audiocoin"> <source src="audiocoin.mp3" type="audio/mpeg">   </audio>
+                <div id="videocontainer">
+                        <video id="video" src="video.mp4" nocontrols playsinline controlsList="nodownload" >
+                       </video>
+                       <div id="videocontrols">
+                           <div id="playbg">
+                                <div id="play"> </div>
+                                <div id="replay"></div>
+                           </div>
+                           <div id="vprogbar">
+                               <div id="vloads"></div>
+                           </div>
+                       </div>
+                </div>
+                <div id="watchgameplay"></div>
+                <div id="collapsegameplay"></div>
+                <div id="soundtoggle"> </div>
+                <div id="gallerycontainer">
+                        <div id="holdera"> </div>
+                        <div id="galleryholder"></div>
+                        <div id="holderb"> </div>
+                        <div id="prev"> </div>
+                        <div id="next"> </div>
+                        <div id="exitgallery"> </div>
+                </div>
+
+        </div>
+
+		</div>
+	</body>
+
+	<script>
+
+		var landingPage;
+
+		var format = "300x600";
+		document.getElementById('adSize').setAttribute('content','width='+format.split('x')[0]+', height='+format.split('x')[1]);
+		document.querySelector('#maincontainer').setAttribute('style','width:'+format.split('x')[0]+'px; height:'+format.split('x')[1]+'px');
+
+		function exitCall() {
+			Enabler.exitOverride("MainClick", landingPage);
+            if (!myVideo.paused && myVideo && !myVideo.ended) {
+                videoStatus = "play"
+                gsap.globalTimeline.pause();
+                myVideo.pause();
+            }
+        }
+
+		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i); // This is to check if the unit is running in mobile so the event to be used is touchend
+
+		if (isMobile != null) {
+				const addTouchListener = (element, callback) => {
+					element.addEventListener('touchstart', () => {
+						element.addEventListener('touchend', callback, { once: true })
+					})
+					element.addEventListener('touchmove', () => {
+						element.removeEventListener('touchend', callback)
+					})
+					}
+					mobileEvent();
+
+		} else {
+					desktopEvent();
+		}
+
+		function mobileEvent(){
+			// addTouchListener(document.getElementById('exitButton'), () => exitCall() )
+		}
+		function desktopEvent(){
+			// document.querySelector('#exitButton').addEventListener('click',exitCall);
+		}
+		function populate(){
+			//exit
+			landingPage = "http://apple.co/SUPERMARIORUN";
+			landingPage2 = "https://play.google.com/store/apps/details?id=com.nintendo.zara";
+			landingPage3 = "http://www.nintendo.co.uk/";
+			//dynamic
+			var frame1Headline = "A new kind of Marion game that you can play with one hand.";
+			document.querySelector(".frame1Headline").innerHTML = frame1Headline;
+
+		}
+		function populate2(){
+			var frame1Subheadline = "Description1"
+			var frame2Subheadline = "Description2"
+			var frame3Subheadline = "Description3"
+			var frame4Subheadline = "Description4"
+			var frame5Subheadline = "Description4"
+			document.querySelector(".frame1Subheadline").innerHTML = frame1Subheadline;
+			document.querySelector(".frame2Subheadline").innerHTML = frame2Subheadline;
+			document.querySelector(".frame3Subheadline").innerHTML = frame3Subheadline;
+			document.querySelector(".frame4Subheadline").innerHTML = frame4Subheadline;
+			document.querySelector(".frame5Subheadline").innerHTML = frame5Subheadline;
+		}
+
+    </script>
+		<script src='animation.js'></script>
+
+	<script>
+			populate();
+			initAnimation();
+	</script>
+
+</html>

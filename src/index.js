@@ -7,13 +7,15 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import History from './sections/History.js'
 import Skills from './sections/Skills.js'
 // import Portfolio from './sections/Portfolio.js';
+import HtmlBanners from './sections/HtmlBanners.js'
 
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   // { path: "/portfolio", element: <Portfolio /> },
   { path: "/history", element: <History /> },
-  { path: "/skills", element: <Skills /> }
+  { path: "/skills", element: <Skills /> },
+  { path: "/HtmlBanners", element: <HtmlBanners /> }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

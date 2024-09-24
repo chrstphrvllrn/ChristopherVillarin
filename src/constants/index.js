@@ -4,7 +4,7 @@
 // banner:'/banners/300x600-SimpleDisplay/index.html'
 
 export const workSamples = [
-    {id: "banner1", thumbnail: require('../images/thumbnails/banner_1.png'), title: 'Banner • 2024', width:'300px', height:'250px',  banner:''  },
+    {id: "banner1", thumbnail: require('../images/thumbnails/banner_1.png'), title: 'Banner • 2024', width:'300px', height:'250px',  banner:'/banners/300x600-SimpleDisplay/index.html'  },
     {id: "banner2",  thumbnail: require('../images/thumbnails/banner_3.png'), title: 'Banner • 2024', width:'300px', height:'250px',  banner:''  },
     {id: "banner3",  thumbnail: require('../images/thumbnails/banner_9.png'), title: 'Banner • 2024', width:'300px', height:'250px',  banner:''  },
     {id: "banner4",  thumbnail: require('../images/thumbnails/banner_5.png'), title: 'Banner • 2024', width:'300px', height:'250px',  banner:''  },

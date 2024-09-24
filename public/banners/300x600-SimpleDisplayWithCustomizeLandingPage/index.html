@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="ad.size" id='adSize'>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+        <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+    </head>
+    <style></style>
+	<body>
+		<div id="container" class="container">
+
+			<div id="frame1Background-wrapper">
+				<img src="" id="frame1Background" />
+				</div>
+
+				<div id="frame1Headline-wrapper">
+				<p id="frame1Headline" />
+				</div>
+
+				<div id="frame1Subheadline-wrapper">
+				<p id="frame1Subheadline"  />
+				</div>
+
+				<div id="checklist1-wrapper">
+				<p id="checklist1"  />
+				</div>
+				<div id="checklist2-wrapper">
+				<p id="checklist2"  />
+				</div>
+				<div id="checklist3-wrapper">
+				<p id="checklist3" />
+				</div>
+
+				<div id="logo-wrapper">
+				<img src="" id="logo"  />
+				</div>
+
+				<div id="label1-wrapper">
+				<p id="label1" />
+				</div>
+				<div id="label2-wrapper">
+				<p id="label2"  />
+				</div>
+
+				<div id='exitButton' class='exitButton'></div>
+
+				<select id="loanterm">
+					<option value="-" selected="">Select loan term</option>
+					<option value="12">12 Months</option>
+					<option value="24">24 Months</option>
+					<option value="36">36 Months</option>
+					<option value="48">48 Months</option>
+					<option value="60">60 Months</option>
+					<option value="72">72 Months</option>
+					<option value="84">84 Months</option>
+				</select>
+
+				<select id="loanamount">
+					<option value="-" selected="">Select loan amount</option>
+					<option value="£500">£500</option>
+					<option value="£1000">£1000</option>
+					<option value="£2000">£2000</option>
+					<option value="£4000">£4000</option>
+					<option value="£8000">£8000</option>
+					<option value="£10000">£10000</option>
+					<option value="£20000">£20000</option>
+					<option value="£35000">£35000</option>
+				</select>
+
+				<input type="submit" id="ctaText" value=""  class="animationButton8" onclick="getaqoute()">
+
+		</div>
+	</body>
+	<script src='animation.js'></script>
+
+	<script>
+
+		var landingPage, landingPage2;
+
+		var format = "300x600";
+		document.getElementById('adSize').setAttribute('content','width='+format.split('x')[0]+', height='+format.split('x')[1]);
+		document.querySelector('#container').setAttribute('style','width:'+format.split('x')[0]+'px; height:'+format.split('x')[1]+'px');
+
+		function exitCall() {
+            Enabler.exitOverride("MainClick", landingPage);
+        }
+		function getaqoute() {
+			var loanterm = document.getElementById("loanterm");
+			var loantermValue = loanterm.options[loanterm.selectedIndex].value;
+			var loanamount = document.getElementById("loanamount");
+			var loanamountValue = loanamount.options[loanamount.selectedIndex].value;
+			//var URL = objValues.landingPage2+ "?loanterm="+loantermValue+"&loanAmount="+loanamountValue
+			var URL = landingPage2+ "?category="+"Personal"+"&loanId="+"9999989"+"&loanAmount="+loanamountValue+"&loanTerm="+loantermValue;
+            Enabler.exit("MainClick", URL);
+        }
+
+		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i); // This is to check if the unit is running in mobile so the event to be used is touchend
+
+		if (isMobile != null) {
+				const addTouchListener = (element, callback) => {
+					element.addEventListener('touchstart', () => {
+						element.addEventListener('touchend', callback, { once: true })
+					})
+					element.addEventListener('touchmove', () => {
+						element.removeEventListener('touchend', callback)
+					})
+					}
+					mobileEvent();
+
+		} else {
+					desktopEvent();
+		}
+
+		function mobileEvent(){
+			addTouchListener(document.getElementById('exitButton'), () => exitCall() )
+		}
+		function desktopEvent(){
+			document.querySelector('#exitButton').addEventListener('click',exitCall);
+		}
+
+		function populate(){
+			//exit
+			landingPage = "https://www.totallymoney.com/loans/" //Main
+			landingPage2 = "https://www.totallymoney.com/loans/" //GetAQoute base url
+			//static
+
+			//dynamic
+			var frame1Background = "background.png"
+			var frame1Headline = "Find your perfect loan"
+			var frame1Subheadline = "Compare loans and see the lowest rate available to you"
+			var checklist1 = "✓ Boost your chances of approval"
+			var checklist2 = "✓ No impact to your credit rating"
+			var checklist3 = "✓ Get an instant response"
+			var label1 = "Loan Term"
+			var label2 = "Loan Amount"
+			var logo = "logo.png"
+			var ctaText = "Check my eligibility"
+
+			//IMAGE
+			document.getElementById('frame1Background').setAttribute("src", frame1Background)
+			document.getElementById('logo').setAttribute("src", logo)
+
+			//TEXT
+			document.getElementById('frame1Headline').innerHTML = frame1Headline;
+			document.getElementById('frame1Subheadline').innerHTML = frame1Subheadline;
+			document.getElementById('checklist1').innerHTML = checklist1;
+			document.getElementById('checklist2').innerHTML = checklist2;
+			document.getElementById('checklist3').innerHTML = checklist3;
+			document.getElementById('label1').innerHTML = label1;
+			document.getElementById('label2').innerHTML = label2;
+			document.getElementById('ctaText').value = ctaText;
+		}
+
+		populate();
+		initAnimation();
+
+    </script>
+</html>

@@ -7,8 +7,10 @@ import IconPlay from './play.js'
 function Project({thumbnail, name, banner, width, height, id}) {
 
   const [toggle, setToggle] = useState(false)
+  
 
-  return (<>
+  return ( 
+  <>
   {/* border border-[#f3f3f3] shadow-sm bg-[#f3f3f3] */}
     <div className="w-72 h-auto flex flex-col justify-center items-left"  style={{ transition: 'width 0.5s ease' }}  >
    
@@ -20,12 +22,12 @@ function Project({thumbnail, name, banner, width, height, id}) {
             <img src={thumbnail} alt='thumbnail' className='border border-[#f3f3f3]  bg-[rgba(0,0,0,0)]' style={{ transition: 'width 0.5s ease' }} 
            />
 
-             {/* <iframe src={banner} width={width} height={height} className="d" ></iframe> */}
+             <iframe src={banner} width={width} height={height} className="" ></iframe>
     
           
             { toggle ? null  :   (  <><div className="bg-[rgba(0,0,0,0)] hover:bg-[rgba(0,0,0,0.2)] w-full h-full absolute transition-all duration-300" ></div> <IconPlay/></>     )}
 
-           
+               
         </div>
         <div className="flex flex-row justify-center pl-1 pr-1 ">
           <p className="text-[0.55rem] font-bold py-4 text-[#2E2F2F] flex align-center justify-center h-full">{name}</p>

@@ -37,6 +37,9 @@ module.exports = {
         }
       }
     },
+    listStyleImage: {
+      checkmark: 'url("/public/icons/checkmark.png")',
+    },
 
     screens: {
       'sm': '640px',
