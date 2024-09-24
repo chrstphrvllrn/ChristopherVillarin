@@ -22,7 +22,7 @@ function Project({thumbnail, name, banner, width, height, id}) {
             <img src={thumbnail} alt='thumbnail' className='border border-[#f3f3f3]  bg-[rgba(0,0,0,0)]' style={{ transition: 'width 0.5s ease' }} 
            />
 
-             <iframe src={banner} width={width} height={height} className="" ></iframe>
+             {/* <iframe src={banner} width={width} height={height} className="" ></iframe> */}
     
           
             { toggle ? null  :   (  <><div className="bg-[rgba(0,0,0,0)] hover:bg-[rgba(0,0,0,0.2)] w-full h-full absolute transition-all duration-300" ></div> <IconPlay/></>     )}
