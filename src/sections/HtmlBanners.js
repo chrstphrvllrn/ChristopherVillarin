@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Footer from './Footer.js'
 import NavBar from './NavBar.js'
+import WebFont from 'webfontloader';
 
 function HtmlBanners() {
+
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Bebas Neue', 'Anton']
+          }
+        });
+      }, []);
+
 
   const myBanners = [
         {id: "Simple Display",   title: 'Banner • 2024', width:'300px', height:'600px',  banner:'/banners/300x600-SimpleDisplay/index.html', description:[
@@ -92,9 +102,9 @@ function HtmlBanners() {
                                     '>
                                         <div className='flex flex-col  '>
                                             {/* bg-gradient-to-r from-[#9bf8f4] via-[#6f7bf7] to-[#9bf8f4]     inline-block text-transparent bg-clip-text */}
-                                            <p className='  text-5xl sm:text-5xl md:text-4xl lg:text-5xl font-bold pb-14 text-text-lightgrey
+                                            <p className='bebas-neue-regular text-6xl sm:text-5xl md:text-4xl lg:text-7xl font-bold pb-14 
                                             w-full sm:w-full md:w-full lg:w-full xl:w-full 
-                                            
+                                            text-text-brand
                                             '>{item.id}</p>
                                             <ul className=' p-5 flex flex-col gap-5
                                             w-full sm:w-full md:w-full lg:w-full xl:w-full'>
@@ -105,10 +115,12 @@ function HtmlBanners() {
                                         </div>
                                         <div className='flex'>
 
-                                            <button 
+                                            {/* <button 
                                             onClick={() => { const element = document.getElementById('myPortfolio'); element?.scrollIntoView({ behavior: 'smooth' }); }}
-                                            className='text-sm bg-button-brand hover:bg-button-lightgrey  text-[#fff] hover:text-[#fff] w-[160px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-150 ease-in-out' style={{ transition: 'background-color 0.3s' }}>Play again</button>
-                                        
+                                            className='text-sm bg-button-dark hover:bg-button-lightgrey  text-[#fff] hover:text-[#fff] w-[160px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-150 ease-in-out' style={{ transition: 'background-color 0.3s' }}>Play again</button>
+                                                   */}
+                                         
+
                                         </div>
                                             
                                 
