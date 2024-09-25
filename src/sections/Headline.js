@@ -8,6 +8,7 @@ import WebFont from 'webfontloader';
 import HtmlBanners from './HtmlBanners.js'
 import { Link } from 'react-router-dom'
 
+import DrawerMessage from '../components/DrawerMessage.js'
 
 function Headline() {
 
@@ -86,10 +87,13 @@ function Headline() {
                                 <p className='text-sm px-0 sm:px-8 md:px-4 text-text-light w-full font-light transition-all duration-150 ease-in-out select-none'>a Front End Developer / Creative Developer<br></br>from the Philippines specializing in developing different kind of banners. With 8 years experienced of developing fully interactive rich media ad units intended to engage the user. In my free time, i'm studying ReactJS, NodeJS and TailwindCSS</p>
                                 <div className='w-full flex flex-row px-0 sm:px-8 md:px-4 '>
                                
-                                <Link to="/HtmlBanners"> <button 
+                                {/* <Link to="/HtmlBanners">  */}
+                                {/* <button 
                                 onClick={() => { }}
-                                className='text-sm bg-button-dark hover:bg-button-lightgrey  text-[#fff] hover:text-[#fff] w-[160px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-150 ease-in-out' style={{ transition: 'background-color 0.3s' }}>Check my Portfolio</button>
-                                </Link>
+                                >Check my Portfolio</button>
+                              */}
+                                <DrawerMessage buttonName='Leave a message'/>
+                                {/* </Link> */}
                                 {/* <button className='text-sm bg-none border border-button-dark hover:bg-[#2E2F2F] text-[#1B224A] hover:text-[#fff] w-[140px] rounded-full font-medium  py-3 px-1  transition-all duration-150 ease-in-out ' style={{ transition: 'background-color 0.3s' }}>Contact</button> */}
                            
                                 </div>

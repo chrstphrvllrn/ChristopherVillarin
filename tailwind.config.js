@@ -19,6 +19,7 @@ module.exports = {
           light: '#f5f5f5',
           dark:'#2E2F2F',
           darkblue:'#1A203C',
+          brand: '#4F8989',
         },
         button:{
           light: '#f3f3f3',

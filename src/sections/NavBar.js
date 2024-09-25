@@ -5,10 +5,13 @@
 import { Link } from 'react-router-dom'
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
+import IconWhatsapp from '../components/icons/whatsapp'
 import Hamburger from '../components/icons/hamburger'
 import { socialMedia  } from '../constants/index';
 import { Toaster, toast } from 'sonner'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import ReactWhatsapp from 'react-whatsapp';
+
 
 const NavBar = () => {
 
@@ -66,6 +69,12 @@ const NavBar = () => {
                             <div className='flex flex-row items-cente gap-4
                               pr-0 sm:pr-0 md:pr-4 lg:pr-4 xl:pr-4 '>
                                 
+                              
+
+                                <ReactWhatsapp number="+639174700328" message="Hi">
+                                    <IconWhatsapp>   </IconWhatsapp>
+                                </ReactWhatsapp>
+
                                 <Link to={socialMedia.linkedin.value} target="_blank" rel="noopener noreferrer" >
                                  
                                     <IconLinkedin></IconLinkedin>
