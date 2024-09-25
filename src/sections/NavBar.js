@@ -8,10 +8,11 @@ import IconGmail from '../components/icons/gmail'
 import Hamburger from '../components/icons/hamburger'
 import { socialMedia  } from '../constants/index';
 import { Toaster, toast } from 'sonner'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const NavBar = () => {
 
-
+   
 
     return (
         <>
@@ -71,16 +72,19 @@ const NavBar = () => {
                                 
                                 </Link>
                                
-
-                                <button onClick={() => {
-                                    toast.success('Email Address has copied to clipboard')
-                                    console.log('copied to clipboard')
-                                    navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')
-                                }}>
-                                <IconGmail></IconGmail>
-                                </button>
+                                <CopyToClipboard text="christopher.villarin.wo@gmail.com">
+                                        <button onClick={() => {
+                                            toast.success('Email Address has copied to clipboard')
+                                            console.log('copied to clipboard')
+                                            // navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')
+                                        }}>
+                                             <IconGmail></IconGmail>
+                                        </button>
+                                </CopyToClipboard>
                                 <Toaster position="bottom-right" />
-                             
+                              
+        
+
                            
                             </div>
                         </div>
