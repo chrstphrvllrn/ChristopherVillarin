@@ -74,7 +74,7 @@ const NavBar = () => {
                                
                                 <CopyToClipboard text="christopher.villarin.wo@gmail.com">
                                         <button onClick={() => {
-                                            toast.success('Email Address has copied to clipboard')
+                                            toast.success('Email address copied to clipboard!')
                                             console.log('copied to clipboard')
                                             // navigator.clipboard.writeText('christopher.villarin.wo@gmail.com')
                                         }}>
