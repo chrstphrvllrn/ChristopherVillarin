@@ -45,6 +45,7 @@ function startAnimation() {
 
 	tween.set("#cta-wrapper",{scale:0.6},"+=0")
 
+	
 
 	//FRAME1
 	tween.to("#frame1Image-wrapper", {opacity:0.99,duration: 0.5, ease: "power2.out"},"+=0.3");

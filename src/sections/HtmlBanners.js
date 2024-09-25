@@ -54,8 +54,8 @@ function HtmlBanners() {
                 flex-col 
                 text-[#030303] 
                 font-light 
-               bg-white
-                 text-black
+                bg-white
+                text-black
 
                 '>
                     <NavBar/>
@@ -87,7 +87,7 @@ function HtmlBanners() {
 
                                 '>
                                  <div className='  
-                                py-10 pl-10 pr-10 
+                                py-10 pl-5 pr-5 
                             
                                 '>
                                      <iframe src={item.banner} width={item.width} height={item.height} alt={item.id} className="" ></iframe>

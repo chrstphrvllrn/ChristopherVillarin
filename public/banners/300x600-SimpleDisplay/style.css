@@ -19,7 +19,14 @@
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+#frame1Headline > div,
+.text-mask {
+    padding-bottom: 0.15em;
+    overflow: hidden;
+    padding-top: 0.1em;
+    margin-bottom: -0.25em;
+    /* border: 1px solid greenyellow; */
+}
 
 #frame1Background-wrapper{
 	position:absolute;

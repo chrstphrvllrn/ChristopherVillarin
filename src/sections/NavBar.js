@@ -7,8 +7,12 @@ import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
 import Hamburger from '../components/icons/hamburger'
 import { socialMedia  } from '../constants/index';
+import { Toaster, toast } from 'sonner'
 
 const NavBar = () => {
+
+
+
     return (
         <>
         <section className='
@@ -67,12 +71,15 @@ const NavBar = () => {
                                 
                                 </Link>
                                
-                                <div onClick={() => navigator.clipboard.writeText(`${socialMedia.gmail.value}`)}  >
-                                 
-                                    <IconGmail></IconGmail>
-                               
-                                </div> 
-       
+
+                                <button onClick={() => {
+                                    toast.success('Email Address has copied to clipboard')
+                                    console.log('copied to clipboard')
+                                }}>
+                                <IconGmail></IconGmail>
+                                </button>
+                                <Toaster position="bottom-right" />
+                             
                            
                             </div>
                         </div>
