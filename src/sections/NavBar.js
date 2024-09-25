@@ -75,6 +75,7 @@ const NavBar = () => {
                                 <button onClick={() => {
                                     toast.success('Email Address has copied to clipboard')
                                     console.log('copied to clipboard')
+                                    navigator.clipboard.writeText(socialMedia.gmail.value)
                                 }}>
                                 <IconGmail></IconGmail>
                                 </button>
