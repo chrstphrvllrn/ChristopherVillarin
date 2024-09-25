@@ -1,12 +1,13 @@
 import React from 'react'
 import { Drawer } from 'vaul';
+import IconMessage from '../components/icons/message'
 
 function DrawerMessage({buttonName}) {
   return (
     <div>
         
         <Drawer.Root direction="bottom">
-            <Drawer.Trigger className='text-sm bg-button-dark hover:bg-button-lightgrey  text-[#fff] hover:text-[#fff] w-[160px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-150 ease-in-out' style={{ transition: 'background-color 0.3s' }}> { buttonName } </Drawer.Trigger>
+            <Drawer.Trigger className='flex align-center items-center gap-2 justify-center text-sm bg-button-dark hover:bg-button-lightgrey  text-[#fff] hover:text-[#fff] w-[190px] rounded-full font-medium  py-3 px-1 mr-3 transition-all duration-150 ease-in-out' style={{ transition: 'background-color 0.3s' }}> { buttonName }<IconMessage/> </Drawer.Trigger>
             
                 <Drawer.Portal>
                 <Drawer.Overlay className="fixed inset-0 bg-black/40" />
