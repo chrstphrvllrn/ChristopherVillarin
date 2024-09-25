@@ -83,7 +83,7 @@ function Headline() {
 
                             </h1>
                                                        
-                                <p className='text-sm px-0 sm:px-8 md:px-4 text-text-light w-full font-light transition-all duration-150 ease-in-out select-none'>a Front End Developer / Creative Developer<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <p className='text-sm px-0 sm:px-8 md:px-4 text-text-light w-full font-light transition-all duration-150 ease-in-out select-none'>a Front End Developer / Creative Developer<br></br>from the Philippines specializing in developing different kind of banners. With 8 years experienced of developing fully interactive rich media ad units intended to engage the user. In my free time, i'm studying ReactJS, NodeJS and TailwindCSS</p>
                                 <div className='w-full flex flex-row px-0 sm:px-8 md:px-4 '>
                                
                                 <Link to="/HtmlBanners"> <button 
