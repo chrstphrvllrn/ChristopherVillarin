@@ -9,9 +9,15 @@ body {
   /* font-family: "Bebas Neue", sans-serif; */
 }
 
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  src: url('../src/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype')
+}  
+
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 

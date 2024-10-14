@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import Footer from './Footer.js'
 import NavBar from './NavBar.js'
-import WebFont from 'webfontloader';
+// import WebFont from 'webfontloader';
 
 function HtmlBanners() {
 
-    useEffect(() => {
-        WebFont.load({
-          google: {
-            families: ['Bebas Neue', 'Anton']
-          }
-        });
-      }, []);
+    // useEffect(() => {
+    //     WebFont.load({
+    //       google: {
+    //         families: ['Bebas Neue', 'Anton']
+    //       }
+    //     });
+    //   }, []);
 
 
   const myBanners = [

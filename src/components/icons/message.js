@@ -9,7 +9,7 @@ function IconMessage(props) {
     <>
     <div className="rounded-xl "> 
       <svg
-    className="fill-current text-white hover:scale-100 hover:text-button-lightgrey transition-colors duration-100 cursor-pointer"
+    className="fill-current text-white hover:text-white transition-colors duration-100 cursor-pointer"
       viewBox="0 0 24 24"
       fill="currentColor"
       height="1.3em"

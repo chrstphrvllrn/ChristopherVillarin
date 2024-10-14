@@ -4,21 +4,12 @@
 import { TypeAnimation } from 'react-type-animation';
 
 import React, { useEffect } from 'react';
-import WebFont from 'webfontloader';
 import HtmlBanners from './HtmlBanners.js'
 import { Link } from 'react-router-dom'
 
 import DrawerMessage from '../components/DrawerMessage.js'
 
 function Headline() {
-
-    useEffect(() => {
-        WebFont.load({
-          google: {
-            families: ['Bebas Neue', 'Anton']
-          }
-        });
-      }, []);
 
     return (
       <>
