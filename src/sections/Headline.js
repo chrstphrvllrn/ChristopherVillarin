@@ -61,12 +61,13 @@ function Headline() {
                              </p> 
 
                                <h1 className='
+                             bebas-neue-regular
                             pl-0 sm:pl-8 md:pl-4 lg:pl-4 xl:pl-4 
                             text-7xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-[8rem] 2xl:text-[9rem] 3xl:text-[10rem] 4xl:text-[14rem]
                             font-medium 
-                            bebas-neue-regular 
+                             
                             text-text-brand
-                            transition-all duration-150 ease-in-out
+                          
                             leading-[0.8em] sm:leading-[0.8em] md:leading-[0.8em] xl:leading-[0.8em]
                             select-none
                             '>
