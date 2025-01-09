@@ -13,14 +13,16 @@ function Headline() {
 
     return (
       <>
-
+   {/* bg-custom-bg */}
+   {/* bg-contain */}
             <section className='
             flex 
             flex-col md:flex-row 
             min-h-[75vh] sm:min-h-[75vh] md:min-h-[45vh] lg:min-h-[70vh] xl:min-h-[80vh] 
             transition-all duration-150 ease-in-out 
-          
+         
             '>
+              
                     
                     <div className="
                         w-full sm:w-full md:w-1/2 

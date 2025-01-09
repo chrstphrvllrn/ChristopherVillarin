@@ -1,7 +1,7 @@
 
 
 
-// import React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
@@ -11,11 +11,12 @@ import { socialMedia  } from '../constants/index';
 import { Toaster, toast } from 'sonner'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactWhatsapp from 'react-whatsapp';
+import CloseBurger from '../components/icons/close';
 
 
 const NavBar = () => {
 
-   
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
     return (
         <>
@@ -29,7 +30,8 @@ const NavBar = () => {
             <div className="h-10 mx-auto  flex"> 
               
                 <div className='w-full flex flex-row justify-center items-center '>
-                 
+
+                    {/* Desktop Menu */}
                     <div className='w-3/4 flex flex-row justify-start gap-10  max-md:hidden '>
                         <ul className='flex rounded-full font-medium 
                         sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm
@@ -50,7 +52,7 @@ const NavBar = () => {
                            <Link to="/HtmlBanners" className='hover:text-button-lightgrey bg-white' style={{ transition: 'background-color 0.3s' }}>
                                 <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PORTFOLIO</li></Link>
                             
-                        
+    
                             {/* <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
                             <Link to="/skills" className='hover:text-button-lightgrey bg-white ' style={{ transition: 'background-color 0.3s' }}>
@@ -59,11 +61,34 @@ const NavBar = () => {
                         </ul>
                    
                        </div>
-                       <div className='w-3/4 hidden max-md:block justify-start'>
 
-                             <Hamburger></Hamburger>
-                       
+                       {/* Mobile Menu */}
+                       <div className='w-3/4 hidden max-md:block justify-start'>
+                         <Hamburger  onClick={() => { setIsNavOpen((prev) => !prev); }}  className={isNavOpen ? 'hidden' : 'flex ' }></Hamburger>
+                        <div className={isNavOpen ? "flex flex-col bg-[rgba(255,255,255,0.5)] w-full h-[100vh] z-10 absolute top-0 left-0 backdrop-blur-md" : "hidden"}>
+                                   
+
+                                    <div
+                                    className="relative px-8 py-4"
+                                    onClick={() => setIsNavOpen(false)}
+                                    >
+                                      <CloseBurger className='cursor-pointer' ></CloseBurger>
+                                    </div> 
+                                 
+                                    <div  className="flex flex-col relative px-8 py-8">
+                                        <Link to="/" className='hover:text-button-lightgrey '  style={{ transition: 'background-color 0.3s' }}> 
+                                            <li className='py-3  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >HOME</li>
+                                        </Link>
+                                        <Link to="/history" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
+                                        <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >WHERE I'VE BEEN</li>
+                                        </Link>
+                                        <Link to="/HtmlBanners" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
+                                        <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >PORTFOLIO</li>
+                                        </Link>
+                                     </div>
                         </div>
+                    
+                        {/* Social */}
                        <div className='w-1/4 flex flex-row justify-end'>
                             
                             <div className='flex flex-row items-cente gap-4

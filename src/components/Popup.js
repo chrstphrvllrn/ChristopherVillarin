@@ -20,7 +20,7 @@ const Popup = ({ title, content, onClose, item }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg shadow-xl w-full mx-12">
+      <div className="bg-white rounded-lg shadow-xl w-full mx-12 transition-all duration-1000">
         <div className="flex items-start justify-between p-5 border-b border-gray-200 rounded-t">
           <h3 className="text-xl font-semibold text-gray-900 ">
             {item.name}
@@ -28,7 +28,9 @@ const Popup = ({ title, content, onClose, item }) => {
           <button
             onClick={handleClose}
             className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 
-            rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+            rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+           
+             "
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 

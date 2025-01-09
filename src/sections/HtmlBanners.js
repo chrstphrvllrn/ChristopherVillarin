@@ -92,32 +92,32 @@ function HtmlBanners() {
             thumbnail: '/thumbnails/supermario2x.png'
         },
         { id: 'banner4',
-            name:'Working is on going',
+            name:'Work is on going',
             description: [],
             tags: ['Banner'],
             thumbnail: '/thumbnails/ongoing2x.png'
         },
         { id: 'Website1',
-            name:'Working is on going',
+            name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
             thumbnail: '/thumbnails/ongoing2x.png'
         },
         { id: 'Website2',
-            name:'Working is on going',
+            name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
             thumbnail: '/thumbnails/ongoing2x.png'
         }
         ,
         { id: 'Website3',
-            name:'Working is on going',
+            name:'Work is on going',
             description: [],
         tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
         thumbnail: '/thumbnails/ongoing2x.png'
         } ,
         { id: 'Website4',
-            name:'Working is on going',
+            name:'Work is on going',
             description: [],
         tags: ['Website','ReactJS','• TailwindCSS', '• Heroku'],
         thumbnail: '/thumbnails/ongoing2x.png'

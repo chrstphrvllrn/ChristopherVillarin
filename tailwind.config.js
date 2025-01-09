@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-bg': "url('/src/images/background/bg-patterns.png')",
+      },
       colors:{
        text:{
           light: '#595F7A',
