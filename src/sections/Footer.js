@@ -16,7 +16,7 @@ function Footer() {
 
           <div className='w-full h-auto flex flex-row justify-start items-end md:items-center lg:items-center '>
                             
-              <button className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">© 2024 Christopher Villarin</button>
+              <button className="text-text-lightlight p-4 hover:text-text-lightgrey transition-all duration-300 ease-in-out">© 2025 Christopher Villarin</button>
               
           </div>
 
