@@ -4,18 +4,19 @@ const Popup = ({ title, content, onClose, item }) => {
   const [isVisible, setIsVisible] = useState(true)
 
   const handleClose = () => {
-    setIsVisible(false)
-    onClose()
-  }
-  
+    console.log("handleClose");
+    setIsVisible(false);
+    setTimeout(() => onClose(), 0); // Delay `onClose` to allow `useEffect` to execute first
+};
+
+
     //Prevent scroll when modal is open
     useEffect(() => {
+        console.log("isVisible:", isVisible);
         document.body.style.overflow = isVisible ? "hidden" : "unset";
-      }, [isVisible]);
+    }, [isVisible]);
     
-
-  if (!isVisible) return null
-
+//   if (!isVisible) return null
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
