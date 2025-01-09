@@ -221,7 +221,7 @@ function HtmlBanners() {
                             ))}   */ }
 
   
-                            <div className='grid grid-row-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-x-16 gap-y-5' >
+                            <div className='grid grid-row-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-x-10 gap-y-5' >
                                 { myBanners.map((item, index) => (
                                     <div className='' id={item.id}>
                                          <button
