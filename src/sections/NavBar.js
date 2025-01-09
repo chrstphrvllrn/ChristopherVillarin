@@ -64,29 +64,28 @@ const NavBar = () => {
                         
                        {/* Mobile Menu */}
                        <div className='w-3/4 hidden max-md:block justify-start'>
-                         <Hamburger  onClick={() => { setIsNavOpen((prev) => !prev); }}  className={isNavOpen ? 'hidden' : 'flex ' }></Hamburger>
-                        <div className={isNavOpen ? "flex flex-col bg-[rgba(255,255,255,0.5)] w-full h-[100vh] z-10 absolute top-0 left-0 backdrop-blur-md" : "hidden"}>
-                                   
-
-                                    <div
-                                    className="relative px-8 py-4"
-                                    onClick={() => setIsNavOpen(false)}
-                                    >
-                                      <CloseBurger className='cursor-pointer' ></CloseBurger>
-                                    </div> 
-                                 
-                                    <div  className="flex flex-col relative px-8 py-8">
-                                        <Link to="/" className='hover:text-button-lightgrey '  style={{ transition: 'background-color 0.3s' }}> 
-                                            <li className='py-3  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >HOME</li>
-                                        </Link>
-                                        <Link to="/history" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
-                                        <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >WHERE I'VE BEEN</li>
-                                        </Link>
-                                        <Link to="/HtmlBanners" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
-                                        <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >PORTFOLIO</li>
-                                        </Link>
-                                     </div>
-                        </div>
+                            <Hamburger  onClick={() => { setIsNavOpen((prev) => !prev); }}  className={isNavOpen ? 'hidden' : 'flex ' }></Hamburger>
+                            <div className={isNavOpen ? "flex flex-col bg-[rgba(255,255,255,0.5)] w-full h-[100vh] z-10 absolute top-0 left-0 backdrop-blur-md" : "hidden"}>
+                                    
+                                        <div
+                                        className="relative px-8 py-4"
+                                        onClick={() => setIsNavOpen(false)}
+                                        >
+                                        <CloseBurger className='cursor-pointer' ></CloseBurger>
+                                        </div> 
+                                    
+                                        <div  className="flex flex-col relative px-8 py-8">
+                                            <Link to="/" className='hover:text-button-lightgrey '  style={{ transition: 'background-color 0.3s' }}> 
+                                                <li className='py-3  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >HOME</li>
+                                            </Link>
+                                            <Link to="/history" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
+                                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >WHERE I'VE BEEN</li>
+                                            </Link>
+                                            <Link to="/HtmlBanners" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
+                                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >PORTFOLIO</li>
+                                            </Link>
+                                        </div>
+                            </div>
                         </div>
                     
                         {/* Social */}
@@ -95,8 +94,6 @@ const NavBar = () => {
                             <div className='flex flex-row items-cente gap-4
                               pr-0 sm:pr-0 md:pr-4 lg:pr-4 xl:pr-4 '>
                                 
-                              
-
                                 <ReactWhatsapp number="+639174700328" message="Hi">
                                     <IconWhatsapp>   </IconWhatsapp>
                                 </ReactWhatsapp>
