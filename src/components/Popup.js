@@ -7,13 +7,15 @@ const Popup = ({ title, content, onClose, item }) => {
     setIsVisible(false)
     onClose()
   }
+  
+    //Prevent scroll when modal is open
+    useEffect(() => {
+        document.body.style.overflow = isVisible ? "hidden" : "unset";
+      }, [isVisible]);
+    
 
   if (!isVisible) return null
 
-  //Prevent scroll when modal is open
-  useEffect(() => {
-    document.body.style.overflow = isVisible ? "hidden" : "unset";
-  }, [isVisible]);
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
