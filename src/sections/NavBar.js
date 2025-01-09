@@ -61,7 +61,7 @@ const NavBar = () => {
                         </ul>
                    
                        </div>
-
+                        
                        {/* Mobile Menu */}
                        <div className='w-3/4 hidden max-md:block justify-start'>
                          <Hamburger  onClick={() => { setIsNavOpen((prev) => !prev); }}  className={isNavOpen ? 'hidden' : 'flex ' }></Hamburger>
@@ -86,6 +86,7 @@ const NavBar = () => {
                                         <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none' >PORTFOLIO</li>
                                         </Link>
                                      </div>
+                        </div>
                         </div>
                     
                         {/* Social */}
@@ -122,6 +123,7 @@ const NavBar = () => {
                            
                             </div>
                         </div>
+                      
                 </div>
 
             </div >
