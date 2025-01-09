@@ -100,26 +100,26 @@ function HtmlBanners() {
         { id: 'Website1',
             name:'Work is on going',
             description: [],
-            tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
+            tags: ['Website: ','ReactJS'],
             thumbnail: '/thumbnails/ongoing2x.png'
         },
         { id: 'Website2',
             name:'Work is on going',
             description: [],
-            tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
+            tags: ['Website: ','ReactJS'],
             thumbnail: '/thumbnails/ongoing2x.png'
         }
         ,
         { id: 'Website3',
             name:'Work is on going',
             description: [],
-        tags: ['Website: ','ReactJS','• TailwindCSS', '• Heroku'],
+            tags: ['Website: ','ReactJS'],
         thumbnail: '/thumbnails/ongoing2x.png'
         } ,
         { id: 'Website4',
             name:'Work is on going',
             description: [],
-        tags: ['Website','ReactJS','• TailwindCSS', '• Heroku'],
+            tags: ['Website: ','ReactJS'],
         thumbnail: '/thumbnails/ongoing2x.png'
         }
 
@@ -221,7 +221,7 @@ function HtmlBanners() {
                             ))}   */ }
 
   
-                            <div className='grid grid-row-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-x-16 gap-y-5' >
+                            <div className='grid grid-row-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-x-16 gap-y-5' >
                                 { myBanners.map((item, index) => (
                                     <div className='' id={item.id}>
                                          <button
@@ -236,7 +236,7 @@ function HtmlBanners() {
                                          </button>
                                         <div className='flex items-center justify-center p-2'>
                                         {item.tags.map((detail, index) => (
-                                                    <span key={index} className="text-md sm:text-sm md:text-xs lg:text-md text-wrap"> &nbsp;{ detail }</span>
+                                                    <span key={index} className="text-md sm:text-sm md:text-xs lg:text-md text-wrap text-center"> &nbsp;{ detail }</span>
                                          ))}
                                         </div> 
 
