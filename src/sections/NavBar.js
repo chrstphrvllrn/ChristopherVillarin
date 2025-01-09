@@ -1,7 +1,7 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
@@ -17,6 +17,13 @@ import CloseBurger from '../components/icons/close';
 const NavBar = () => {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
+
+    useEffect(() => {
+        console.log("isNavOpen:", isNavOpen);
+        document.body.style.overflow = isNavOpen ? "hidden" : "unset";
+    }, [isNavOpen]);
+    
+
 
     return (
         <>
