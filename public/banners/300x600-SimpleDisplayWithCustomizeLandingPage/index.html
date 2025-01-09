@@ -101,21 +101,34 @@
             Enabler.exit("MainClick", URL);
         }
 
-		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i); // This is to check if the unit is running in mobile so the event to be used is touchend
+		// Check if the device is mobile
+		const isMobile = /iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-		if (isMobile != null) {
-				const addTouchListener = (element, callback) => {
-					element.addEventListener('touchstart', () => {
-						element.addEventListener('touchend', callback, { once: true })
-					})
-					element.addEventListener('touchmove', () => {
-						element.removeEventListener('touchend', callback)
-					})
-					}
-					mobileEvent();
+		// Utility function to add touch event listeners
+		const addTouchListener = (element, callback) => {
+			const handleTouchStart = () => {
+				element.addEventListener('touchend', callback, { once: true });
+			};
+			const handleTouchMove = () => {
+				element.removeEventListener('touchend', callback);
+			};
 
+			element.addEventListener('touchstart', handleTouchStart);
+			element.addEventListener('touchmove', handleTouchMove);
+		};
+
+		if (isMobile) {
+			if (typeof mobileEvent === 'function') {
+				mobileEvent(addTouchListener); // Pass addTouchListener explicitly to mobileEvent
+			} else {
+				console.error("mobileEvent is not defined or is not a function.");
+			}
 		} else {
-					desktopEvent();
+			if (typeof desktopEvent === 'function') {
+				desktopEvent(); // Execute desktop-specific logic
+			} else {
+				console.error("desktopEvent is not defined or is not a function.");
+			}
 		}
 
 		function mobileEvent(){
