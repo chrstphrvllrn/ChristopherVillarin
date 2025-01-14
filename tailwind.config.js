@@ -43,6 +43,7 @@ module.exports = {
     },
     listStyleImage: {
       checkmark: 'url("/public/icons/checkmark.png")',
+      bullet: '',
     },
 
     screens: {
