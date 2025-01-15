@@ -5,6 +5,7 @@ import smartly from '../images/companylogos/smartly.svg';
 import sizmek from '../images/companylogos/sizmek.jpg';
 import wideout from '../images/companylogos/wideout.png';
 import certificate from '../images/icons/certificate.svg';
+import Footer from './Footer.js'
 
 const History = () => {
 
@@ -210,8 +211,9 @@ const History = () => {
                                 </div>
                                
                             </div>
+
                     </section>
-        
+                    <Footer/>
             
 
                  
