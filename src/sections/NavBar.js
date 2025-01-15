@@ -2,7 +2,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from "react-router-dom";
 import IconLinkedin from '../components/icons/linkedin'
 import IconGmail from '../components/icons/gmail'
 import IconWhatsapp from '../components/icons/whatsapp'
@@ -17,6 +17,7 @@ import CloseBurger from '../components/icons/close';
 const NavBar = () => {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         console.log("isNavOpen:", isNavOpen);
@@ -24,6 +25,11 @@ const NavBar = () => {
     }, [isNavOpen]);
     
 
+    const getLinkClass = (path) => {
+        return location.pathname === path
+          ? "border-b-2 border-[#4F8989] text-[#4F8989] "
+          : "text-text-dark hover:text-button-lightgrey";
+      };
 
     return (
         <>
@@ -45,18 +51,18 @@ const NavBar = () => {
                         pl-0 sm:pl-8 md:pl-4 lg:pl-4 xl:pl-4 
                       
                         sm:flex md:flex lg:flex xl:flex '>
-                            <Link to="/" className='hover:text-button-lightgrey bg-white'  style={{ transition: 'background-color 0.3s' }}> 
+                            <Link to="/" className={getLinkClass("/") + ` bg-white`}   style={{ transition: 'background-color 0.3s' }}> 
                                 <li className='py-3  cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >HOME</li>
                             </Link>
                   
                             <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
-                            <Link to="/history" className='hover:text-button-lightgrey bg-white' style={{ transition: 'background-color 0.3s' }}>
+                            <Link to="/history" className={getLinkClass("/history") + `  bg-white`} style={{ transition: 'background-color 0.3s' }}>
                                 <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >WHERE I'VE BEEN</li></Link>
                             
                                 <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
-                           <Link to="/HtmlBanners" className='hover:text-button-lightgrey bg-white' style={{ transition: 'background-color 0.3s' }}>
+                           <Link to="/HtmlBanners" className={getLinkClass("/HtmlBanners") + `  bg-white`} style={{ transition: 'background-color 0.3s' }}>
                                 <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PORTFOLIO</li></Link>
                             
     
