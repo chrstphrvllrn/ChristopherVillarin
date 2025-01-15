@@ -24,58 +24,62 @@ const History = () => {
               ],
             tags: ['2023 - present'],
              thumbnail: hogarth,
-             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP (GreenSock Animation Platform)", "Following Storyboard(PDF, XD, PSD, Indesign,Figma)","Photoshop, Illustrator","Platform: Doubleclick Studio, Flashtalking, Celtra","Version control: Github"]
+             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP (GreenSock Animation Platform)", "GIT", "Following Storyboard(PDF, XD, PSD, Indesign, Figma)","Illustrator" ,"Photoshop", "Figma" ,"Platform: Doubleclick Studio, Flashtalking, Celtra","Version control: Github"]
         },
         { id: 'smartly',
             name:'smartly',
             jobtitle:'Creative Developer',
             description:[
-                " Creative Production from PSDs/XDs/AI/Indesign/Figma and other files",
+                " Creative Production from PSDs/XDs and other files",
+                " Develop fully interactive rich media ad units intended to engage the user",
+                " Resize and/or Revise ad units",
                 " Set up and configure dynamic feeds to generate variations in accordance with client requirements.",
-                " Apply the provided IDs(CM Placement Ids, DV360 Ids, Dynamic Targeting Keys or Geo) and targeting strategies(Remarketing, Prospecting) to accurately tailor campaigns to specific audiences.",
-                " Collaborate with Producers to understand their technical and programming questions and Help identify and evaluate technical solutions and alternatives.",
+                " Apply the provided IDs and targeting strategies to accurately tailor campaigns to specific audiences.",
+                " Collaborate with Designers and Art Directors to assess the feasibility of animations and features.",
+                " Collaborate with Project Managers to understand their technical and programming questions and Help identify and evaluate technical solutions and alternatives.",
                 " Cross-Browser and Device Compatibility: Testing and optimizing the banners for various web browsers and devices to ensure a seamless user experience across different platforms. This includes addressing any compatibility issues and making necessary adjustments to ensure proper rendering.",
-
+             
               ],
             tags: ['2018 - 2023'],
              thumbnail: smartly,
-             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP", "GIT"]
+             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP (GreenSock Animation Platform)", "GIT", "Following Storyboard(PDF, XD, PSD)", "Illustrator", "Google Web Designer (GWD)", ,"Photoshop", "Platform: Doubleclick Studio"]
         },
         { id: 'sizmek',
             name:'sizmek',
             jobtitle:'Creative Developer',
             description:[
-                " Creative Production from PSDs/XDs/AI/Indesign/Figma and other files",
-                " Set up and configure dynamic feeds to generate variations in accordance with client requirements.",
-                " Apply the provided IDs(CM Placement Ids, DV360 Ids, Dynamic Targeting Keys or Geo) and targeting strategies(Remarketing, Prospecting) to accurately tailor campaigns to specific audiences.",
-                " Collaborate with Producers to understand their technical and programming questions and Help identify and evaluate technical solutions and alternatives.",
-                " Cross-Browser and Device Compatibility: Testing and optimizing the banners for various web browsers and devices to ensure a seamless user experience across different platforms. This includes addressing any compatibility issues and making necessary adjustments to ensure proper rendering.",
-
+                " Platform API intergration from client HTML files",
+                " Creative Production from PSDs and other files",
+                " Develop fully interactive rich media ad units intended to engage the user",
+                " Resize and/or Revise ad units",
+                " Encode Client Videos resulting in Online Video Ads",
+                " Compile KPI report for team lead",
+                " other duties assigned",
               ],
             tags: ['2015 - 2017'],
              thumbnail: sizmek,
-             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP", "GIT"]
+             skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP", "JSON", "Following Storyboard(PDF, XD, PSD)", "Illustrator" ,"Photoshop", "Adobe Media Encoder(resizing video quality)", "Filezilla", "Fiddler"]
         },
         { id: 'wideout',
             name:'wideout',
             jobtitle:'Flash Developer',
             description:[
-                " Creative Production from PSDs/XDs/AI/Indesign/Figma and other files",
-                " Set up and configure dynamic feeds to generate variations in accordance with client requirements.",
-                " Apply the provided IDs(CM Placement Ids, DV360 Ids, Dynamic Targeting Keys or Geo) and targeting strategies(Remarketing, Prospecting) to accurately tailor campaigns to specific audiences.",
-                " Collaborate with Producers to understand their technical and programming questions and Help identify and evaluate technical solutions and alternatives.",
-                " Cross-Browser and Device Compatibility: Testing and optimizing the banners for various web browsers and devices to ensure a seamless user experience across different platforms. This includes addressing any compatibility issues and making necessary adjustments to ensure proper rendering.",
-
+                " Receive tasks from Team Leaders and other designated point persons and develop assigned projects for Clients.",
+                " Monitor delivery status and slack time and takes measures to ensure productivity.",
+                " Learn new production design, development methodologies, trade tools and apply them in production.",
+                " Contribute in the documentation of bugs and their fixes shared in production.",
+                " Contribute in the formulation of team-centric policies, standards and practices to ensure consistent performance and productivity of the team.",
+                " Offer advice to team personnel on production design, development and testing.",
               ],
             tags: ['2014 - 2015'],
             thumbnail: wideout,
-            skills: ["HTML", "JAVASCRIPT", "CSS", "GSAP", "GIT"]
+            skills: ["Adobe Flash", "Actionscript 3", "Photoshop", "Illustrator", "GSAP(GreenSock Animation Platform)", "Following Storyboard(PDF)"]
         }
 
 
     ];
 
-    const [content, setContent] = useState(myHistory[0])
+    // const [content, setContent] = useState(myHistory[0])
 
     return (
 
@@ -131,7 +135,7 @@ const History = () => {
  
   
                             <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-5  ' >
-                                { myHistory.map((item, index) => (
+                                {/* { myHistory.map((item, index) => (
                                     <div className='flex flex-col align-center items-center' id={item.id}>
                                          <button
                                         onClick={() => {setContent(item) } }
@@ -153,36 +157,56 @@ const History = () => {
                                     </div>
 
                                          
-                                ))}
+                                ))} */}
 
                                 </div>
                              
-                                <div className='w-3/4 h-auto flex  rounded-xl px-16 max-w-3/4' >
-                                {content && (
+                                <div className='w-full h-auto flex flex-col rounded-xl max-w-full' >
+                                {myHistory.map(item => (
                                     <>
-                                       <div className='flex flex-col gap-y-4 max-w-3/4'>
-                                        <p className='text-md font-bold uppercase text-text-brand bebas-neue-regular text-5xl sm:text-5xl md:text-5xl lg:text-5xl'>{content.name}</p>
-                                        <p className='text-md font-bold text-gray-700'>{content.jobtitle}</p>
-                                        <p className='text-sm '>{content.tags}</p>
-                                        <div></div>
-                                        <p className='text-sm font-bold '>Roles and Responsibilities:</p>
-                                        {content.description.map((detail, index) => (
-                                            <>
-                                                            <li key={index} className="list-image-bullet text-sm sm:text-sm md:text-sm lg:text-md text-wrap  ">{ detail }</li>
-                                                        </>
-                                         ))}
-                                         <div></div>
-                                          <p className='text-sm font-bold '>Skills:</p>
-                                         <div className=' inline-block space-x-2 space-y-4'>
-                                        {content.skills.map((detail, index) => (
-                                        <>
-                                                        <span key={index} className="px-4 py-2 rounded-3xl inline-block bg-gray-100 text-sm sm:text-sm md:text-sm lg:text-md w-fit text-nowrap">{ detail }</span>
-                                                    </>
-                                        ))}
-                                        </div>
+                                       <div className='flex flex-row gap-y-4 max-w-full gap-x-16 '>
+
+                                                <div className='w-1/7'>
+                                                    <div className='flex flex-col gap-x-8 items-between'>
+                                                        <div className='w-[13vw] overflow-hidden border rounded-xl '>
+                                                            <img className='w-[13vw] hover:scale-105 duration-500 hover:duration-500 hover:transition-all hover:animate-none hover:delay-0 cursor-pointer' src={item.thumbnail}/>
+                                                        </div>
+                                                        <div className='flex items-center justify-center'>
+                                                            <div className='h-[29rem] w-[0.15rem] bg-background-lightlightorange'></div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            
+                                                <div className='w-6/7 pb-10'>
+                                                    <div className='flex flex-col gap-y-2'>
+                                                            <p className='text-md font-bold uppercase text-text-brand bebas-neue-regular text-5xl sm:text-5xl md:text-5xl lg:text-5xl'>{item.name}</p>
+                                                            <p className='text-lg font-bold text-gray-700'>{item.jobtitle}</p>
+                                                            <p className='text-sm '>{item.tags}</p>
+                                                       
+                                                       
+                                                        <p className='text-sm font-bold pt-4'>Roles and Responsibilities:</p>
+                                                        {item.description.map((detail, index) => (
+                                                            <>
+                                                                            <li key={index} className="list-image-bullet text-sm sm:text-sm md:text-sm lg:text-md text-wrap  ">{ detail }</li>
+                                                                        </>
+                                                        ))}
+                                                      
+                                                        <p className='text-sm font-bold pt-4'>Skills:</p>
+                                                        <div className=' inline-block space-x-2 space-y-4'>
+                                                        {item.skills.map((detail, index) => (
+                                                        <>
+                                                                        <span key={index} className="px-4 py-2 rounded-3xl inline-block bg-gray-100 text-sm sm:text-sm md:text-sm lg:text-md w-fit text-nowrap">{ detail }</span>
+                                                                    </>
+                                                        ))}
+                                                        </div>
+                                                        </div>
+                                                </div>
+
+
                                          </div>
                                     </>
-                                )}
+                              ))}
                                 </div>
                                
                             </div>

@@ -10,6 +10,7 @@ module.exports = {
        text:{
           light: '#595F7A',
           lightgrey: '#5F5F5F',
+          lightlightorange: '#fccead',
           brand: '#4F8989',
           dark:'#2E2F2F',
           darkgrey: '#595F7A',
@@ -20,6 +21,8 @@ module.exports = {
         background: {
           DEFAULT: '#fff',
           light: '#f5f5f5',
+          lightlightorange: '#fccead',
+          lightgrey: '#5F5F5F',
           dark:'#2E2F2F',
           darkblue:'#1A203C',
           brand: '#4F8989',
