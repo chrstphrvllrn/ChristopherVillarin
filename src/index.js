@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import History from './sections/History.js'
 import Skills from './sections/Skills.js'
 // import Portfolio from './sections/Portfolio.js';
-import HtmlBanners from './sections/HtmlBanners.js'
+import Projects from './sections/Projects.js'
 
 
 const router = createBrowserRouter([
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   // { path: "/portfolio", element: <Portfolio /> },
   { path: "/history", element: <History /> },
   { path: "/skills", element: <Skills /> },
-  { path: "/HtmlBanners", element: <HtmlBanners /> }
+  { path: "/Projects", element: <Projects /> }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

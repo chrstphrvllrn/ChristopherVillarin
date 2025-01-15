@@ -4,7 +4,7 @@ import NavBar from './NavBar.js'
 // import WebFont from 'webfontloader';
 import Popup from '../components/Popup.js';
 
-function HtmlBanners() {
+function Projects() {
 
 
     const [showPopup, setShowPopup] = useState(false)
@@ -267,6 +267,6 @@ function HtmlBanners() {
   )
 }
 
-export default HtmlBanners
+export default Projects
 
 
