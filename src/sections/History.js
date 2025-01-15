@@ -117,7 +117,7 @@ const History = () => {
                     flex-wrap
               
                     items-start 
-                    justify-center
+                    justify-start
                     text-left 
                 
                     sm:max-w-[100%] md:max-w-[100%] lg:max-w-[100%] xl:max-w-[100%] 2xl:max-w-[100%]
@@ -130,7 +130,7 @@ const History = () => {
 
  
   
-                            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-5 w-1/4 ' >
+                            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-10 gap-y-5  ' >
                                 { myHistory.map((item, index) => (
                                     <div className='flex flex-col align-center items-center' id={item.id}>
                                          <button
@@ -157,7 +157,7 @@ const History = () => {
 
                                 </div>
                              
-                                <div className='w-3/4 h-auto flex  rounded-xl px-8 max-w-3/4' >
+                                <div className='w-3/4 h-auto flex  rounded-xl px-16 max-w-3/4' >
                                 {content && (
                                     <>
                                        <div className='flex flex-col gap-y-4 max-w-3/4'>

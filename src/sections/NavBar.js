@@ -62,8 +62,8 @@ const NavBar = () => {
                             
                                 <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
                             
-                           <Link to="/Projects" className={getLinkClass("/Projects") + `  bg-white`} style={{ transition: 'background-color 0.3s' }}>
-                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PORTFOLIO</li></Link>
+                           <Link to="/projects" className={getLinkClass("/projects") + `  bg-white`} style={{ transition: 'background-color 0.3s' }}>
+                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out' >PROJECTS</li></Link>
                             
     
                             {/* <p className='py-3 px-6 font-light text-gray-300 bg-white'>|</p>
@@ -94,8 +94,8 @@ const NavBar = () => {
                                             <Link to="/history" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
                                                 <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >WHERE I'VE BEEN</li>
                                             </Link>
-                                            <Link to="/Projects" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
-                                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >PORTFOLIO</li>
+                                            <Link to="/projects" className='hover:text-button-lightgrey ' style={{ transition: 'background-color 0.3s' }}>
+                                                <li className='py-3   cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out list-none font-bold' >PROJECTS</li>
                                             </Link>
                                         </div>
                             </div>
