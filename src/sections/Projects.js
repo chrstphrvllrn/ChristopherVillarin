@@ -91,11 +91,11 @@ function Projects() {
                   ],
             thumbnail: '/thumbnails/supermario2x.png'
         },
-        { id: 'banner4',
-            name:'Work is on going',
-            description: [],
-            tags: ['Banner'],
-            thumbnail: '/thumbnails/ongoing2x.png'
+        { id: 'Website0',
+            name:'Maven Roc',
+            description: ["http://www.mavenroc.com"],
+            tags: ['Website'],
+            thumbnail: '/thumbnails/mavenroc.png'
         },
         { id: 'Website1',
             name:'Work is on going',
