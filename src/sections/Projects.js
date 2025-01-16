@@ -8,20 +8,11 @@ function Projects() {
 
 
     const [showPopup, setShowPopup] = useState(false)
-
     const [item, setItem] = useState('')
+    const [selectedType, setSelectedType] = useState("all");
+  
     
-
-    // useEffect(() => {
-    //     WebFont.load({
-    //       google: {
-    //         families: ['Bebas Neue', 'Anton']
-    //       }
-    //     });
-    //   }, []);
-
-
-  const myBanners = [
+  const data = [
         // {id: "Simple Display",   title: 'Banner • 2024', width:'300px', height:'600px',  banner:'/banners/300x600-SimpleDisplay/index.html', description:[
         //     " Used GSAP for animation (a third party framework)",
         //     " Used SplitText aJS (which is also a GSAP framework) to animate the text per line",
@@ -59,7 +50,8 @@ function Projects() {
                 " Used Web default font",
                 " User can replay the animation"
               ],
-          thumbnail: '/thumbnails/simpledisplay2x.png'
+          thumbnail: '/thumbnails/simpledisplay2x.png',
+          type: "banner"
         },
         { id: 'banner2',
             name:'Banner with Customized Landing Page',
@@ -74,7 +66,8 @@ function Projects() {
                     " Check my eligiblity - This will add the value from the dropdown text to the landing page once the user hits the 'check my eligibility' button"
                     ,"https://www.totallymoney.com/loans/?category=Personal&loanId=00&loanAmount=£500&loanTerm=24"
                 ],
-            thumbnail: '/thumbnails/displaywithcustomizedlandingpage2x.png'
+            thumbnail: '/thumbnails/displaywithcustomizedlandingpage2x.png',
+          type: "banner"
         },
         { id: 'banner3',
             name:'Banner with Video and Image Gallery',
@@ -89,38 +82,44 @@ function Projects() {
                     " With Video",
                     " With three landing pages"
                   ],
-            thumbnail: '/thumbnails/supermario2x.png'
+            thumbnail: '/thumbnails/supermario2x.png',
+          type: "banner"
         },
         { id: 'Website0',
             name:'Maven Roc',
             description: ["http://www.mavenroc.com"],
             tags: ['Website'],
-            thumbnail: '/thumbnails/mavenroc.png'
+            thumbnail: '/thumbnails/mavenroc.png',
+          type: "website"
         },
         { id: 'Website1',
             name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS'],
-            thumbnail: '/thumbnails/ongoing2x.png'
+            thumbnail: '/thumbnails/ongoing2x.png',
+          type: "website"
         },
         { id: 'Website2',
             name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS'],
-            thumbnail: '/thumbnails/ongoing2x.png'
+            thumbnail: '/thumbnails/ongoing2x.png',
+          type: "website"
         }
         ,
         { id: 'Website3',
             name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS'],
-        thumbnail: '/thumbnails/ongoing2x.png'
+        thumbnail: '/thumbnails/ongoing2x.png',
+          type: "website"
         } ,
         { id: 'Website4',
             name:'Work is on going',
             description: [],
             tags: ['Website: ','ReactJS'],
-        thumbnail: '/thumbnails/ongoing2x.png'
+        thumbnail: '/thumbnails/ongoing2x.png',
+          type: "website"
         }
 
 
@@ -128,6 +127,12 @@ function Projects() {
 
     ];
     
+  
+    const filteredData =
+    selectedType === "all"
+      ? data
+      : data.filter((item) => item.type === selectedType);
+
 
 
   return (
@@ -160,8 +165,8 @@ function Projects() {
                     transition-all duration-500
                      pl-8 sm:pl-8 md:pl-16  
                      pr-8 sm:pr-8 md:pr-16
-                     pt-8
-                     pb-10
+                  
+                    
                     ">
 
 
@@ -220,9 +225,37 @@ function Projects() {
                                 </div>
                             ))}   */ }
 
+
+                            <div className="mb-8">
+                                    <button
+                                    className={`px-4 py-2 mr-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
+                                        selectedType === "all" ? "bg-background-lightlightgrey " : "bg-none"
+                                    }`}
+                                    onClick={() => setSelectedType("all")}
+                                    >
+                                    ALL
+                                    </button>
+                                    <button
+                                    className={`px-4 py-2 mr-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
+                                        selectedType === "banner" ? "bg-background-lightlightgrey" : "bg-none font-bold"
+                                    }`}
+                                    onClick={() => setSelectedType("banner")}
+                                    >
+                                    BANNER
+                                    </button>
+                                    <button
+                                    className={`px-4 py-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
+                                        selectedType === "website" ? "bg-background-lightlightgrey" : "bg-none"
+                                    }`}
+                                    onClick={() => setSelectedType("website")}
+                                    >
+                                    WEBSITE
+                                    </button>
+                                </div>
+
   
                             <div className='grid grid-row-1 sm:grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-x-10 gap-y-5' >
-                                { myBanners.map((item, index) => (
+                                { filteredData.map((item, index) => (
                                     <div className='' id={item.id}>
                                          <button
                                         onClick={() => {setShowPopup(true); setItem(item)} }
