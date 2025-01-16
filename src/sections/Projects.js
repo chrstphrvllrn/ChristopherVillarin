@@ -229,7 +229,7 @@ function Projects() {
                             <div className="mb-8">
                                     <button
                                     className={`px-4 py-2 mr-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
-                                        selectedType === "all" ? "bg-background-lightlightgrey " : "bg-none"
+                                        selectedType === "all" ? "bg-background-lightlightgrey " : "bg-none hover:scale-105 transition-all duration-300 ease-in-out"
                                     }`}
                                     onClick={() => setSelectedType("all")}
                                     >
@@ -237,7 +237,7 @@ function Projects() {
                                     </button>
                                     <button
                                     className={`px-4 py-2 mr-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
-                                        selectedType === "banner" ? "bg-background-lightlightgrey" : "bg-none font-bold"
+                                        selectedType === "banner" ? "bg-background-lightlightgrey" : "bg-none font-bold hover:scale-105 transition-all duration-300 ease-in-out"
                                     }`}
                                     onClick={() => setSelectedType("banner")}
                                     >
@@ -245,7 +245,7 @@ function Projects() {
                                     </button>
                                     <button
                                     className={`px-4 py-2 rounded-2xl   sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm font-medium ${
-                                        selectedType === "website" ? "bg-background-lightlightgrey" : "bg-none"
+                                        selectedType === "website" ? "bg-background-lightlightgrey" : "bg-none hover:scale-105 transition-all duration-300 ease-in-out"
                                     }`}
                                     onClick={() => setSelectedType("website")}
                                     >
